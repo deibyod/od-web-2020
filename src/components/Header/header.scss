@@ -1,0 +1,11 @@
+.header-container {
+    background-image: url(./images/header-img.png);
+    background-size: 100% 100%;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 1.5em;
+
+    .personal-photo {
+        width: 6em;
+    }
+}

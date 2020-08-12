@@ -1,0 +1,26 @@
+.map-container {
+    padding: 1.5em;
+    text-align: center;
+
+    img {
+        width: 88%;
+    }
+
+    @media screen and (min-width: 400px) {
+        .big-map {
+            display: initial;
+        }
+        .small-map {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .big-map {
+            display: none;
+        }
+        .small-map {
+            display: initial;
+        }
+    }
+}

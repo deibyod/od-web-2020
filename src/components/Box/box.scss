@@ -1,0 +1,46 @@
+.box-container {
+    background-size: 100% 100%;
+    color: #555;
+    padding: 1.3em;
+    margin: 1.5em;
+    width: 22vw;
+    min-width: 230px;
+    min-height: 15vw;
+    font-size: 0.7em;
+
+    &.box-1 {
+        background-image: url(./images/box-bg-1.png);
+    }
+    &.box-2 {
+        background-image: url(./images/box-bg-2.png);
+    }
+    &.box-3 {
+        background-image: url(./images/box-bg-3.png);
+    }
+    &.box-blue {
+        background-image: url(./images/box-bg-blue.png);
+    }
+
+    .box-content {
+        background: #fff;
+        padding: 1.2em;
+        margin: 0 auto;
+        min-height: 10vw;
+        border-radius: 0.8em;
+        box-shadow: 0 0 0.3em rgba(0,0,0,0.16);
+
+        .box-text {
+            min-height: 7.8em;
+        }
+
+        .graphic-button {
+            padding: 1em 1em 0 1em;
+            border-top: 1px solid rgb(232,232,232);
+
+            img {
+                max-height: 2.7em;
+                max-width: 80%;
+            }
+        }
+    }
+}
