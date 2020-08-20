@@ -11,7 +11,8 @@ import blog from '../../images/blog.png';
 const boxes = [
     {
         type: 1,
-        text: "Si te gustaría conocer mi perfil profesional y conectar profesionalmente, o si ya me conoces y te gustaría ayudarme a validar mis skills, te invito a visitar mi…",
+        title: "MI PERFIL PROFESIONAL",
+        text: "Conoce mi perfil profesional <br><strong>¿Hemos trabajado juntos?</strong>",
         image: linkedin,
         url: "https://linkedin.com/in/deibyod/"
     },
