@@ -50,7 +50,7 @@ const boxes = [
         type: "blue",
         text: "A lo largo de mi carrera, algo, bien diverso, he escrito en mi…",
         image: blog,
-        url: "https://odagile.com/blog/"
+        url: "https://blog.deibyod.co"
     }
 ];
 
