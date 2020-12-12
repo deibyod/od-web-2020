@@ -13,29 +13,31 @@
                         "text": "<strong>¿Me recomendarías en LinkedIn?</strong><br>Sería muy gratificante para mí.<br> <a href='https://www.linkedin.com/in/deibyod/detail/recommendation/write/' target='_blank' class='secondary-action'>Ir a dejar recomendación</a>"
                     },
                     "no": {
-                        "text": "¿Qué hizo falta para que quisieras?"
+                        "text": "¿Qué hizo falta para que quisieras?<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     }
                 },
                 "no": {
                     "text": "<strong>Lo siento mucho.</strong><br>¿Me ayudarías a entender por qué para mejorarlo?",
                     "yes": {
-                        "text": "<strong>Gracias. Escríbelo aquí:</strong>"
+                        "text": "<strong>Gracias. Escríbelo aquí:</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     },
-                    "no": ""
+                    "no": {
+                        "text": "Está bien. <br>Gracias por llegar hasta aquí."
+                    }
                 }
             },
             "no": {
                 "text": "<strong>¿Eres un(a) reclutador(a)?</strong>",
                 "yes": {
-                    "text": "Aquí puedes descargar mi CV.<button>VER CV</button> Si tengo el perfil que buscas, <a href='#' target='_blank'>conversemos en LinkedIn.</a>"
+                    "text": "Aquí puedes descargar mi CV.<br><a href='http://blog.deibyod.co/wp-content/uploads/2020/12/CV-Deiby-Ordoñez-2020.pdf' target='_blank' class='secondary-action'>VER CV</a> <br>Si tengo el perfil que buscas, <br><a href='https://linkedin.com/in/deibyod/' target='_blank'>conversemos en LinkedIn.</a>"
                 },
                 "no": {
                     "text": "<strong>¿Te gustaría trabajar conmigo?</strong>",
                     "yes": {
-                        "text": "<strong>¡Genial!.</strong> Dame tu contacto"
+                        "text": "<strong>¡Genial!.</strong> Dame tu contacto<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     },
                     "no": {
-                        "text": "<strong>¿Qué te motivó a llegar hasta aquí?</strong>"
+                        "text": "<strong>¿Qué te motivó a llegar hasta aquí?</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     }
                 }
             }
