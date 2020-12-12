@@ -6,7 +6,7 @@ import linkedin from '../../images/social/linkedin.png';
 import facebook from '../../images/social/facebook.png';
 import instagram from '../../images/social/instagram.png';
 import youtube from '../../images/social/youtube.png';
-import twitter from '../../images/social/linkedin.png';
+import twitter from '../../images/social/twitter.png';
 import blog from "../../images/blog.png";
 
 class Box extends Component { 
