@@ -14,6 +14,31 @@
         text-decoration: none;
     }
 
+    button.flow-button {
+        display: inline-block;
+        padding: 0.15em 0 0.1em 0;
+        margin-bottom: 1em;
+        background-color: #D26B73;
+        border: 0;
+        border-radius: 1em;
+        min-width: 45px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    .secondary-action {
+        display: inline-block;
+        padding: 0.4em;
+        margin: 0.8em 0;
+        background-color: #28B8CE;
+        border: 0;
+        border-radius: 1em;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
     &.box-1 {
         background-image: url(./images/box-bg-1.png);
     }

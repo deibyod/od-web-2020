@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "type": 1,
+        "title": "MI PERFIL PROFESIONAL",
+        "content": {
+            "text": "Conoce mi perfil profesional <br><strong>¿Hemos trabajado juntos?</strong>",
+            "yes": {
+                "text": "<strong>¿Tuviste una buena experiencia trabajando conmigo?</strong>",
+                "yes": {
+                    "text": "<strong>¿Me recomendarías?</strong>",
+                    "yes": {
+                        "text": "<strong>¿Me recomendarías en LinkedIn?</strong><br>Sería muy gratificante para mí.<br> <a href='https://www.linkedin.com/in/deibyod/detail/recommendation/write/' target='_blank' class='secondary-action'>Ir a dejar recomendación</a>"
+                    },
+                    "no": {
+                        "text": "¿Qué hizo falta para que quisieras?"
+                    }
+                },
+                "no": {
+                    "text": "<strong>Lo siento mucho.</strong><br>¿Me ayudarías a entender por qué para mejorarlo?",
+                    "yes": {
+                        "text": "<strong>Gracias. Escríbelo aquí:</strong>"
+                    },
+                    "no": ""
+                }
+            },
+            "no": {
+                "text": "<strong>¿Eres un(a) reclutador(a)?</strong>",
+                "yes": {
+                    "text": "Aquí puedes descargar mi CV.<button>VER CV</button> Si tengo el perfil que buscas, <a href='#' target='_blank'>conversemos en LinkedIn.</a>"
+                },
+                "no": {
+                    "text": "<strong>¿Te gustaría trabajar conmigo?</strong>",
+                    "yes": {
+                        "text": "<strong>¡Genial!.</strong> Dame tu contacto"
+                    },
+                    "no": {
+                        "text": "<strong>¿Qué te motivó a llegar hasta aquí?</strong>"
+                    }
+                }
+            }
+        },
+        "image": "linkedin",
+        "url": "https://linkedin.com/in/deibyod/"
+    },
+    {
+        "id": 2,
+        "type": 2,
+        "content": {
+            "text": "No soy fotografo, no domino ni lo esencial, pero intento capturar escenas que me agradan a la vista. Si quieres ayudarme con tus likes, comentarios o incluso críticas, sígueme en mi…"
+        },
+        "image": "instagram",
+        "url": "https://instagram.com/deibyod/"
+    },
+    {
+        "id": 3,
+        "type": 3,
+        "content": {
+            "text": "Si eres de los que prefieren intercambiar “buenas” ideas en corto, te invito a seguirnos en…"
+        },
+        "image": "twitter",
+        "url": "https://twitter.com/deibyod"
+    },
+    {
+        "id": 4,
+        "type": 1,
+        "content": {
+            "text": "¿Nos conocemos personalmente? Me alegraría conectar contigo más cotidianamente. Continuemos conociéndonos y conectando a través de…"
+        },
+        "image": "facebook",
+        "url": "https://www.facebook.com/deibyod/"
+    },
+    {
+        "id": 5,
+        "type": 2,
+        "content": {
+            "text": "¡Soy YouTuber! En realidad no, pero muy ocasionalmente experimento con algo. Conoce nuestro canal de viajes GoTravel en…"
+        },
+        "image": "youtube",
+        "url": "https://www.youtube.com/channel/UC7PSm60sA0_URrmLZ9L_q3Q"
+    },
+    {
+        "id": 6,
+        "type": 3,
+        "content": {
+            "text": "Algunos videos muy antiguos y diversos en mi casi-obsoleto canal en…"
+        },
+        "image": "youtube",
+        "url": "https://www.youtube.com/DeibyOd"
+    },
+    {
+        "id": 7,
+        "type": "blue",
+        "content": {
+            "text": "A lo largo de mi carrera, algo, bien diverso, he escrito en mi…"
+        },
+        "image": "blog",
+        "url": "https://blog.deibyod.co"
+    }
+]

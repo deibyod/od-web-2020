@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from './components/Header/Header';
 import SectionTitle from './components/SectionTitle/SectionTitle';
-import Spaces from './components/Spaces/Spaces';
+import Boxes from './components/Boxes/Boxes';
 import Map from './components/Map/Map';
 import Footer from './components/Footer/Footer';
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <Spaces />
+        <Boxes />
         <SectionTitle />
         <Map />
         <Footer />
