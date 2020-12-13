@@ -76,8 +76,7 @@ class Box extends Component {
         return(
             <div className={`box-container box-${box.type}`}>
                 <div className="box-content">
-                    { box.title? <h2>{box.title}</h2> : "" }
-                    { box.title? <img className="separator" alt="Separator" src={separator} /> : "" }
+                    { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
                     { box.content? <p className="box-html-text" dangerouslySetInnerHTML={{__html: this.state.text}}></p> : null }
                     { this.state.text_route.yes? <div><button className="flow-button" onClick={this.yesFlowAction}>SI</button> <button className="flow-button" onClick={this.noFlowAction}>NO</button></div> : "" }
                     <a href={box.url} target="_blank" rel="noopener noreferrer">

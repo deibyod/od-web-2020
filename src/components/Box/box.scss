@@ -59,11 +59,14 @@
         background-image: url(./images/box-bg-blue.png);
     }
 
-    .box-content {
+    .box-content {  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background: #fff;
         padding: 1.2em;
         margin: 0 auto;
-        min-height: 10vw;
+        min-height: 15vw;
         border-radius: 0.8em;
         box-shadow: 0 0 0.3em rgba(0,0,0,0.16);
 
