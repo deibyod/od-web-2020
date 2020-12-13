@@ -1,11 +1,9 @@
 
-## Sitio Web Deiby Od
+## Deiby Od Website (Landing)
 
-Construido en React.
+Built with React.
 
--
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -37,6 +35,12 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `yarn run deploy`
 
 Deploy in GitHub Pages.
+
+With: 
+`yarn predeploy`
+and:
+`yarn deploy`
+The project is published on gh-pages.
 
 ### `yarn eject`
 
