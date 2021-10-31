@@ -14,7 +14,8 @@ class Box extends Component {
         flow_level: 0,
         flow_action: "",
         text_route: this.props.box.content,
-        text: this.props.box.content.text
+        text: this.props.box.content.text,
+        buttontext: this.props.box.content.buttontext
     }
 
     getImage() {    
@@ -72,13 +73,18 @@ class Box extends Component {
 
     render() {
         const {box} = this.props;
+        const space = ' ';
 
         return(
             <div className={`box-container box-${box.type}`}>
                 <div className="box-content">
                     { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
                     { box.content? <p className="box-html-text" dangerouslySetInnerHTML={{__html: this.state.text}}></p> : null }
-                    { this.state.text_route.yes? <div><button className="flow-button" onClick={this.yesFlowAction}>SI</button> <button className="flow-button" onClick={this.noFlowAction}>NO</button></div> : "" }
+                    <div>
+                        { this.state.text_route.yes? <button className="flow-button" onClick={this.yesFlowAction}>{this.state.buttontext? this.state.buttontext.one : "Opción 1"}</button> : "" } 
+                        { this.state.text_route.no? space : ""} 
+                        { this.state.text_route.no? <button className="flow-button" onClick={this.noFlowAction}>{this.state.buttontext.two? this.state.buttontext.two : "Opción 2"}</button>: "" }
+                    </div> 
                     <a href={box.url} target="_blank" rel="noopener noreferrer">
                         <div className="graphic-button">
                             <img alt="Box graphic" src={this.getImage()} /><img alt="Box arrow button" src={arrowButton} className="arrow-button"></img>

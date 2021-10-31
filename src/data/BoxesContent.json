@@ -5,6 +5,10 @@
         "title": "MI PERFIL PROFESIONAL",
         "content": {
             "text": "Conoce mi perfil profesional <br><strong>¿Hemos trabajado juntos?</strong>",
+            "buttontext": {
+                "one": "SI",
+                "two": "NO"
+            },
             "yes": {
                 "text": "<strong>¿Tuviste una buena experiencia trabajando conmigo?</strong>",
                 "yes": {
@@ -48,8 +52,15 @@
     {
         "id": 2,
         "type": 2,
+        "title": "MIS FOTOGRAFÍAS",
         "content": {
-            "text": "No soy fotografo, no domino ni lo esencial, pero intento capturar escenas que me agradan a la vista. Si quieres ayudarme con tus likes, comentarios o incluso críticas, sígueme en mi…"
+            "text": "Saco algunas fotografías <br><strong>¿Validamos si te gustaría verlas?</strong>",
+            "buttontext": {
+                "one": "Validemos"
+            },
+            "yes": {
+                "text": "Dale like a las fotos que te gusten :)"
+            }
         },
         "image": "instagram",
         "url": "https://instagram.com/deibyod/"
