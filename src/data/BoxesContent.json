@@ -69,7 +69,7 @@
         "id": 3,
         "type": 3,
         "content": {
-            "text": "Si eres de los que prefieren intercambiar “buenas” ideas en corto, te invito a seguirnos en…"
+            "text": "Si eres de los que prefieren intercambiar “buenas” ideas en corto, te invito a seguirnos."
         },
         "image": "twitter",
         "url": "https://twitter.com/deibyod"
@@ -78,7 +78,7 @@
         "id": 4,
         "type": 1,
         "content": {
-            "text": "¿Nos conocemos personalmente? Me alegraría conectar contigo más cotidianamente. Continuemos conociéndonos y conectando a través de…"
+            "text": "¿Nos conocemos personalmente? Me alegraría conectar contigo más cotidianamente. Continuemos conociéndonos y conectando."
         },
         "image": "facebook",
         "url": "https://www.facebook.com/deibyod/"
@@ -87,7 +87,7 @@
         "id": 5,
         "type": 2,
         "content": {
-            "text": "¡Soy YouTuber! En realidad no, pero muy ocasionalmente experimento con algo. Conoce nuestro canal de viajes GoTravel en…"
+            "text": "Ocasionalmente experimento con algo. Conoce nuestro naciente canal de viajes GoTravel."
         },
         "image": "youtube",
         "url": "https://www.youtube.com/channel/UC7PSm60sA0_URrmLZ9L_q3Q"
@@ -96,7 +96,7 @@
         "id": 6,
         "type": 3,
         "content": {
-            "text": "Algunos videos muy antiguos y diversos en mi casi-obsoleto canal en…"
+            "text": "Algunos videos muy antiguos y diversos en mi viejo canal."
         },
         "image": "youtube",
         "url": "https://www.youtube.com/DeibyOd"
@@ -105,7 +105,7 @@
         "id": 7,
         "type": "blue",
         "content": {
-            "text": "A lo largo de mi carrera, algo, bien diverso, he escrito en mi…"
+            "text": "A lo largo de mi carrera, algo, bien diverso y ocasional, he escrito."
         },
         "image": "blog",
         "url": "https://blog.deibyod.co"
