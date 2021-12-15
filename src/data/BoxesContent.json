@@ -58,7 +58,9 @@
             "buttontext": {
                 "one": "Validemos"
             },
-            "buttonimages": true
+            "optionone": {
+                "buttonimages": true
+            }
         },
         "image": "instagram",
         "url": "https://instagram.com/deibyod/"
