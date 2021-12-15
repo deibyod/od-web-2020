@@ -9,38 +9,38 @@
                 "one": "SI",
                 "two": "NO"
             },
-            "yes": {
+            "optionone": {
                 "text": "<strong>¿Tuviste una buena experiencia trabajando conmigo?</strong>",
-                "yes": {
+                "optionone": {
                     "text": "<strong>¿Me recomendarías?</strong>",
-                    "yes": {
+                    "optionone": {
                         "text": "<strong>¿Me recomendarías en LinkedIn?</strong><br>Sería muy gratificante para mí.<br> <a href='https://www.linkedin.com/in/deibyod/detail/recommendation/write/' target='_blank' class='secondary-action'>Ir a dejar recomendación</a>"
                     },
-                    "no": {
+                    "optiontwo": {
                         "text": "¿Qué hizo falta para que quisieras?<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     }
                 },
-                "no": {
+                "optiontwo": {
                     "text": "<strong>Lo siento mucho.</strong><br>¿Me ayudarías a entender por qué para mejorarlo?",
-                    "yes": {
+                    "optionone": {
                         "text": "<strong>Gracias. Escríbelo aquí:</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     },
-                    "no": {
+                    "optiontwo": {
                         "text": "Está bien. <br>Gracias por llegar hasta aquí."
                     }
                 }
             },
-            "no": {
+            "optiontwo": {
                 "text": "<strong>¿Eres un(a) reclutador(a)?</strong>",
-                "yes": {
+                "optionone": {
                     "text": "Aquí puedes descargar mi CV.<br><a href='http://blog.deibyod.co/wp-content/uploads/2020/12/CV-Deiby-Ordoñez-2020.pdf' target='_blank' class='secondary-action'>VER CV</a> <br>Si tengo el perfil que buscas, <br><a href='https://linkedin.com/in/deibyod/' target='_blank'>conversemos en LinkedIn.</a>"
                 },
-                "no": {
+                "optiontwo": {
                     "text": "<strong>¿Te gustaría trabajar conmigo?</strong>",
-                    "yes": {
+                    "optionone": {
                         "text": "<strong>¡Genial!.</strong> Dame tu contacto<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     },
-                    "no": {
+                    "optiontwo": {
                         "text": "<strong>¿Qué te motivó a llegar hasta aquí?</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
                     }
                 }
@@ -58,9 +58,7 @@
             "buttontext": {
                 "one": "Validemos"
             },
-            "yes": {
-                "text": "Dale like a las fotos que te gusten :)"
-            }
+            "buttonimages": true
         },
         "image": "instagram",
         "url": "https://instagram.com/deibyod/"

@@ -83,6 +83,13 @@
             min-height: 4em;
         }
 
+        .images-button {
+            .images-button-img {
+                max-width: 20%;
+                margin: 0 0.2em;
+            }
+        }
+
         .graphic-button {
             padding: 0.8em 0.8em 0 0.8em;
             border-top: 1px solid rgb(232,232,232);
