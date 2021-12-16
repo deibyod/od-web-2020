@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MaximizeIcon from '../MaximizeIcon/MaximizeIcon';
 import './box.scss';
 import arrowButton from './images/arrow-button.png';
 import separator from '../../images/separator.png';
@@ -24,7 +25,8 @@ class Box extends Component {
         text_route: this.props.box.content,
         text: this.props.box.content.text,
         buttontext: this.props.box.content.buttontext,
-        buttonimages: this.props.box.content.buttonimages
+        buttonimages: this.props.box.content.buttonimages,
+        maximize: "minimize"
     }
 
     getImage() {
@@ -84,13 +86,27 @@ class Box extends Component {
         console.log("imagesselection");
     }
 
+    toggleMaximize = (maximize_state) => {
+        console.log(maximize_state);
+        if(this.state.maximize == "minimize") {
+            this.setState({
+                maximize: "maximize"
+            })
+        } else {
+            this.setState({
+                maximize: "minimize"
+            })
+        }
+    }
+
     render() {
         const {box} = this.props;
         const space = ' ';
 
         return(
             <div className={`box-container box-${box.type}`}>
-                <div className="box-content">
+                <div className={`box-content ${this.state.maximize}`}>
+                    <MaximizeIcon onChange={this.toggleMaximize}/>
                     { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
                     { box.content? <p className="box-html-text" dangerouslySetInnerHTML={{__html: this.state.text}}></p> : null }
                     <div>

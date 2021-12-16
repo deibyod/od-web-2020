@@ -7,6 +7,7 @@
     min-width: 230px;
     min-height: 15vw;
     font-size: 0.7em;
+    position: relative;
 
     h2 {
         font-size: 1.4em;
@@ -46,6 +47,11 @@
         background-color: #28B8CE;
     }
 
+    &.maximize {
+        width: 80%;
+        font-size: 2em;
+    }
+
     &.box-1 {
         background-image: url(./images/box-bg-1.png);
     }
@@ -59,7 +65,8 @@
         background-image: url(./images/box-bg-blue.png);
     }
 
-    .box-content {  
+    .box-content {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
