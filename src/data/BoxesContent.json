@@ -68,6 +68,7 @@
     {
         "id": 3,
         "type": 3,
+        "title": "MIS IDEAS EN CORTO",
         "content": {
             "text": "Si eres de los que prefieren intercambiar “buenas” ideas en corto, te invito a seguirnos."
         },
@@ -77,6 +78,7 @@
     {
         "id": 4,
         "type": 1,
+        "title": "MI CIRCULO DE AMIG@S",
         "content": {
             "text": "¿Nos conocemos personalmente? Me alegraría conectar contigo más cotidianamente. Continuemos conociéndonos y conectando."
         },
@@ -86,6 +88,7 @@
     {
         "id": 5,
         "type": 2,
+        "title": "MIS VIAJES",
         "content": {
             "text": "Ocasionalmente experimento con algo. Conoce nuestro naciente canal de viajes GoTravel."
         },
@@ -95,6 +98,7 @@
     {
         "id": 6,
         "type": 3,
+        "title": "MIS VIDEOS DIVERSOS",
         "content": {
             "text": "Algunos videos muy antiguos y diversos en mi viejo canal."
         },
@@ -104,6 +108,7 @@
     {
         "id": 7,
         "type": "blue",
+        "title": "MIS ESCRITOS DIVERSOS",
         "content": {
             "text": "A lo largo de mi carrera, algo, bien diverso y ocasional, he escrito."
         },
