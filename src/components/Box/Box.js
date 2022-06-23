@@ -26,32 +26,25 @@ class Box extends Component {
         text: this.props.box.content.text,
         buttontext: this.props.box.content.buttontext,
         buttonimages: this.props.box.content.buttonimages,
-        maximize: "minimize"
+        maximize: "minimized"
     }
 
     getImage() {
         switch (this.props.box.image) {
             case 'blog':
                 return blog;
-                break;
             case 'linkedin':
                 return linkedin;
-                break;
             case 'instagram':
                 return instagram;
-                break;
             case 'twitter':
                 return twitter;
-                break;
             case 'facebook':
                 return facebook;
-                break;
             case 'youtube':
                 return youtube;
-                break;
             default:
                 return this.props.box.image;
-                break;
         }
     }
 
@@ -86,16 +79,15 @@ class Box extends Component {
         console.log("imagesselection");
     }
 
-    toggleMaximize = (maximize_state) => {
-        console.log(maximize_state);
-        if(this.state.maximize == "minimize") {
+    toggleMaximize = () => {
+        if(this.state.maximize === "minimized") {
             this.setState({
-                maximize: "maximize"
-            })
+                maximize: "maximized"
+            });
         } else {
             this.setState({
-                maximize: "minimize"
-            })
+                maximize: "minimized"
+            });
         }
     }
 
@@ -104,9 +96,9 @@ class Box extends Component {
         const space = ' ';
 
         return(
-            <div className={`box-container box-${box.type}`}>
-                <div className={`box-content ${this.state.maximize}`}>
-                    <MaximizeIcon onChange={this.toggleMaximize}/>
+            <div className={`box-container box-${box.type} ${this.state.maximize}`}>
+                <div className={`box-content`}>
+                    <MaximizeIcon toggleMaximize={this.toggleMaximize}/>
                     { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
                     { box.content? <p className="box-html-text" dangerouslySetInnerHTML={{__html: this.state.text}}></p> : null }
                     <div>
@@ -115,14 +107,14 @@ class Box extends Component {
                         { this.state.text_route.optiontwo? <button className="flow-button" onClick={this.twoFlowAction}>{this.state.buttontext.two? this.state.buttontext.two : "Opción 2"}</button>: "" }
 
                         { this.state.text_route.buttonimages? <div className="images-button">
-                            <img className="images-button-img" alt="IG Photo" src={ig1}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig2}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig3}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig4}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig5}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig6}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig7}/>
-                            <img className="images-button-img" alt="IG Photo" src={ig8}/>
+                            <img className="images-button-img" alt="IG" src={ig1}/>
+                            <img className="images-button-img" alt="IG" src={ig2}/>
+                            <img className="images-button-img" alt="IG" src={ig3}/>
+                            <img className="images-button-img" alt="IG" src={ig4}/>
+                            <img className="images-button-img" alt="IG" src={ig5}/>
+                            <img className="images-button-img" alt="IG" src={ig6}/>
+                            <img className="images-button-img" alt="IG" src={ig7}/>
+                            <img className="images-button-img" alt="IG" src={ig8}/>
                         </div> : "" }
                     </div>
                     <a href={box.url} target="_blank" rel="noopener noreferrer">

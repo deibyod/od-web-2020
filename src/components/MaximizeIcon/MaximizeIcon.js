@@ -1,7 +1,5 @@
 import React, { Component }  from 'react';
 import './maximize-icon.scss';
-import maximizeImage from './images/maximize.png';
-import minimizeImage from './images/minimize.png';
 
 class Maximize extends Component {
     state = {
@@ -9,7 +7,7 @@ class Maximize extends Component {
     }
 
     toggleState = () => {
-        if(this.state.image_state == "maximize") {
+        if(this.state.image_state === "maximize") {
             this.setState({
                 image_state: "minimize"
             })
@@ -18,6 +16,7 @@ class Maximize extends Component {
                 image_state: "maximize"
             })
         }
+        this.props.toggleMaximize();
     }
 
     render() {
