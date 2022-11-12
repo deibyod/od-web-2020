@@ -6,7 +6,18 @@
     padding: 1.5em;
 
     .personal-photo {
-        width: 6em;
+        border-radius: 100%;
+        width: 8em;
+        height: 8em;
+        max-width: 8em;
+        max-height: 8em;
+        min-width: 8em;
+        min-height: 8em;
+        display: inline-block;
+
+        &:hover {
+            content: url(./images/photos/deibyod-0.png);
+        }
     }
 }
 
