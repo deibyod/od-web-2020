@@ -52,65 +52,19 @@
     {
         "id": 2,
         "type": 2,
-        "title": "MIS FOTOGRAFÍAS",
+        "title": "MIS APARICIONES EN VIDEO",
         "content": {
-            "text": "Saco algunas fotografías <br><strong>¿Validamos si te gustaría verlas?</strong>",
-            "buttontext": {
-                "one": "Validemos"
-            },
-            "optionone": {
-                "buttonimages": true
-            }
-        },
-        "image": "instagram",
-        "url": "https://instagram.com/deibyod/"
-    },
-    {
-        "id": 3,
-        "type": 3,
-        "title": "MIS IDEAS EN CORTO",
-        "content": {
-            "text": "Si eres de los que prefieren intercambiar “buenas” ideas en corto, te invito a seguirnos."
-        },
-        "image": "twitter",
-        "url": "https://twitter.com/deibyod"
-    },
-    {
-        "id": 4,
-        "type": 1,
-        "title": "MI CIRCULO DE AMIG@S",
-        "content": {
-            "text": "¿Nos conocemos personalmente? Me alegraría conectar contigo más cotidianamente. Continuemos conociéndonos y conectando."
-        },
-        "image": "facebook",
-        "url": "https://www.facebook.com/deibyod/"
-    },
-    {
-        "id": 5,
-        "type": 2,
-        "title": "MIS VIAJES",
-        "content": {
-            "text": "Ocasionalmente experimento con algo. Conoce nuestro naciente canal de viajes GoTravel."
+            "text": "Una lista de youtube con algunas de mis participaciones en charlas, recursos, eventos y otros contenidos en video."
         },
         "image": "youtube",
-        "url": "https://www.youtube.com/channel/UC7PSm60sA0_URrmLZ9L_q3Q"
-    },
-    {
-        "id": 6,
-        "type": 3,
-        "title": "MIS VIDEOS DIVERSOS",
-        "content": {
-            "text": "Algunos videos muy antiguos y diversos en mi viejo canal."
-        },
-        "image": "youtube",
-        "url": "https://www.youtube.com/DeibyOd"
+        "url": "https://www.youtube.com/watch?v=mJP0u_V4n1s&list=PLnrDiaVpy5TNqD3UP0Vl2CFUpM-yvFtez"
     },
     {
         "id": 7,
-        "type": "blue",
+        "type": 3,
         "title": "MIS ESCRITOS DIVERSOS",
         "content": {
-            "text": "A lo largo de mi carrera, algo, bien diverso y ocasional, he escrito."
+            "text": "Algunos de mis escritos ocasionales en distintos tópicos, especialmente (pero no limitado a) agile/agilidad, software y cultura libre."
         },
         "image": "blog",
         "url": "https://blog.deibyod.co"

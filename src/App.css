@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.App h1 {
+  font-size: 1.5em;
+  padding: 0.8em 0 0.2em 0;
+  color: #D26B73;
+}
