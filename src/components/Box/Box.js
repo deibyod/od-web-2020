@@ -96,7 +96,7 @@ class Box extends Component {
         const space = ' ';
 
         return(
-            <div className={`box-container box-${box.type} ${this.state.maximize}`}>
+            <div className={`box-container box-${box.type} ${this.state.maximize}`} onClick={this.toggleMaximize}>
                 <div className={`box-content`}>
                     <MaximizeIcon toggleMaximize={this.toggleMaximize}/>
                     { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
