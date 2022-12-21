@@ -17,13 +17,13 @@
                         "text": "<strong>¿Me recomendarías en LinkedIn?</strong><br>Sería muy gratificante para mí.<br> <a href='https://www.linkedin.com/in/deibyod/detail/recommendation/write/' target='_blank' class='secondary-action'>Ir a dejar recomendación</a>"
                     },
                     "optiontwo": {
-                        "text": "¿Qué hizo falta para que quisieras?<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
+                        "text": "¿Qué hizo falta para que quisieras?<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribirme en LinkedIn.</a>"
                     }
                 },
                 "optiontwo": {
                     "text": "<strong>Lo siento mucho.</strong><br>¿Me ayudarías a entender por qué para mejorarlo?",
                     "optionone": {
-                        "text": "<strong>Gracias. Escríbelo aquí:</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
+                        "text": "<strong>Gracias. Escríbelo aquí:</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribirme en LinkedIn.</a>"
                     },
                     "optiontwo": {
                         "text": "Está bien. <br>Gracias por llegar hasta aquí."
@@ -38,10 +38,10 @@
                 "optiontwo": {
                     "text": "<strong>¿Te gustaría trabajar conmigo?</strong>",
                     "optionone": {
-                        "text": "<strong>¡Genial!.</strong> Dame tu contacto<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
+                        "text": "<strong>¡Genial!.</strong> Dame tu contacto<br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribirme en LinkedIn.</a>"
                     },
                     "optiontwo": {
-                        "text": "<strong>¿Qué te motivó a llegar hasta aquí?</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribir en LinkedIn.</a>"
+                        "text": "<strong>¿Qué te motivó a llegar hasta aquí?</strong><br><a href='https://linkedin.com/in/deibyod/' target='_blank'>Escribirme en LinkedIn.</a>"
                     }
                 }
             }

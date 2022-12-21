@@ -79,7 +79,7 @@ class Box extends Component {
         console.log("imagesselection");
     }
 
-    toggleMaximize = () => {
+    toggleMaximize = (event) => {
         if(this.state.maximize === "minimized") {
             this.setState({
                 maximize: "maximized"
@@ -91,12 +91,25 @@ class Box extends Component {
         }
     }
 
+    exitMaximize = (event) => {
+        if (event.target.contains(document.getElementsByClassName('maximized')[0])) {
+            console.log("Clicked outside Box");
+            if(this.state.maximize === "maximized") {
+                this.setState({
+                    maximize: "minimized"
+                });
+            }
+        } else {
+            console.log("Clicked in Box");
+        }
+    }
+
     render() {
         const {box} = this.props;
         const space = ' ';
 
         return(
-            <div className={`box-container box-${box.type} ${this.state.maximize}`} onClick={this.toggleMaximize}>
+            <div className={`box-container box-${box.type} ${this.state.maximize}`} onClick={this.exitMaximize}>
                 <div className={`box-content`}>
                     <MaximizeIcon toggleMaximize={this.toggleMaximize}/>
                     { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
