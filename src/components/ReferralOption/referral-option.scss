@@ -39,6 +39,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        text-align: justify;
         background: #fff;
         padding: 1.2em;
         margin: 0 auto;
@@ -58,26 +59,24 @@
         .referral-option-html-text {
             min-height: 4em;
         }
+    }
 
-        .images-button {
-            .images-button-img {
-                max-width: 20%;
-                margin: 0 0.2em;
-            }
+    .brand-logo {
+        padding: 0.8em 0.8em 0 0.8em;
+        border-bottom: 1px solid rgb(232,232,232);
+
+        img {
+            width: 80%;
         }
+    }
 
-        .graphic-button {
-            padding: 0.8em 0.8em 0 0.8em;
-            border-top: 1px solid rgb(232,232,232);
-
-            img {
-                max-height: 1.8em;
-                max-width: 60%;
-            }
-
-            .arrow-button {
-                float: right;
-            }
-        }
+    .referral-link {
+        padding: 0.8em;
+        text-align: center;
+        word-wrap: break-word;
+        font-size: 0.9em;
+        color: #D26B73;
+        border-radius: 1em;
+        box-shadow: 0 0 0.1em rgba(0,0,0,0.16);
     }
 }

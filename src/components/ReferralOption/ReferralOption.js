@@ -28,13 +28,15 @@ class ReferralOption extends Component {
 
         return(
             <div className={`referral-option-container`}>
+                <a href={referral_option.url} target="_blank" rel="noopener noreferrer">
+                    <div className="brand-logo">
+                        <img alt={referral_option.title} src={this.getImage()} />
+                    </div>
+                </a>
                 <div className={`referral-option-content`}>
-                    { referral_option.title? <h2>{referral_option.title}<br /></h2>  : "" }
                     { referral_option.content? <p className="referral-option-html-text" dangerouslySetInnerHTML={{__html: this.state.text}}></p> : null }
-                    <a href={referral_option.url} target="_blank" rel="noopener noreferrer">
-                        <div className="graphic-button">
-                            <img alt="Referral option graphic" src={this.getImage()} />
-                        </div>
+                    <a href={referral_option.url} target="_blank" rel="noopener noreferrer" className='referral-link'>
+                        {referral_option.url}
                     </a>
                 </div>
             </div>

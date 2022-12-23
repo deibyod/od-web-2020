@@ -24,7 +24,7 @@ function App() {
         <Boxes boxContent={ProfessionalSpacesContent} />
         <h1>PERSONAL</h1>
         <Boxes boxContent={PersonalSpacesContent} />
-        <h1>REFERENCIAS</h1>
+        <h1>REFERIDOS</h1>
         <ReferralOptions optionContent={ReferralsContent} />
         <SectionTitle />
         <Map />
