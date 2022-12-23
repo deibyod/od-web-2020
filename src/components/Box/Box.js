@@ -93,14 +93,11 @@ class Box extends Component {
 
     exitMaximize = (event) => {
         if (event.target.contains(document.getElementsByClassName('maximized')[0])) {
-            console.log("Clicked outside Box");
             if(this.state.maximize === "maximized") {
                 this.setState({
                     maximize: "minimized"
                 });
             }
-        } else {
-            console.log("Clicked in Box");
         }
     }
 
