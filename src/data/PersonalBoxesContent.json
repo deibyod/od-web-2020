@@ -1,6 +1,6 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "type": 2,
         "title": "MIS FOTOGRAFÍAS",
         "content": {
@@ -16,7 +16,7 @@
         "url": "https://instagram.com/deibyod/"
     },
     {
-        "id": 3,
+        "id": 2,
         "type": 3,
         "title": "MIS IDEAS EN CORTO",
         "content": {
@@ -26,7 +26,7 @@
         "url": "https://twitter.com/deibyod"
     },
     {
-        "id": 4,
+        "id": 3,
         "type": 1,
         "title": "MI CIRCULO DE AMIG@S",
         "content": {
@@ -36,7 +36,7 @@
         "url": "https://www.facebook.com/deibyod/"
     },
     {
-        "id": 5,
+        "id": 4,
         "type": 2,
         "title": "MIS VIAJES",
         "content": {
@@ -46,7 +46,7 @@
         "url": "https://www.youtube.com/channel/UC7PSm60sA0_URrmLZ9L_q3Q"
     },
     {
-        "id": 6,
+        "id": 5,
         "type": 3,
         "title": "MIS VIDEOS DIVERSOS",
         "content": {
@@ -56,7 +56,7 @@
         "url": "https://www.youtube.com/DeibyOd"
     },
     {
-        "id": 7,
+        "id": 6,
         "type": "blue",
         "title": "MIS ESCRITOS DIVERSOS",
         "content": {

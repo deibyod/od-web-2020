@@ -26,7 +26,7 @@ const Header = ()  => {
     return(
         <div className="header-container">
             <a href="http://www.deibyod.co" rel="noopener noreferrer">
-                <img className="personal-photo" src={PersonalPhoto[getRandomInt(1, 6)]} />
+                <img className="personal-photo" src={PersonalPhoto[getRandomInt(1, 6)]} alt="Deiby Od profile" />
             </a>
             <p className="name-style"><strong>Deiby</strong> Fabian <strong>O</strong>rdoñez <strong>D</strong>iaz</p>
         </div>

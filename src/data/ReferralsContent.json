@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Platzi",
+        "content": {
+            "text": "He usado platzi para mantener hábitos de aprendizaje, explorar temas tecnológicos modernos, y especialmente, ayudar a otros a introducirse a carreras tecnológicas (planes con beneficiario). Me motiva su propósito. Como cliente y al estar alineado a mis intereses y objetivos, me siento cómodo compartiendolo. Considera usar mi link de referido si te animas a probarlo (así sigo haciendo todo lo que expliqué antes)."
+        },
+        "image": "platzi",
+        "url": "https://platzi.com/c/dod/"
+    },
+    {
+        "id": 2,
+        "title": "Soy Focus",
+        "content": {
+            "text": "Una de las formas de invertir más simples, fáciles de usar, estables y a su vez, rentables que he usado es Soy Focus, una empresa B (que quiere generar un impacto positivo). La uso y mi experiencia me da la confianza de referirla. Considera usar mi link de referido si te animas a usarla (o el código de referido DEIBY1)."
+        },
+        "image": "soyfocus",
+        "url": "https://soyfocus.com/onboarding/#!/referido/DEIBY1"
+    },
+    {
+        "id": 3,
+        "title": "Boletín de 9punto5",
+        "content": {
+            "text": "Pocos boletines que recibo realmente los leo. La mayoría los borro. Unos pocos (en su mayoría de inversiones o agile) los ojeo. Y contados con una mano los leo en su mayoría. Uno de ellos es el de 9punto5. Considera usar mi link de referido si te animas a suscribirte."
+        },
+        "image": "nuevepunto5",
+        "url": "https://news.9punto5.cl/subscribe?ref=kUTS7k1e2t"
+    }
+]
