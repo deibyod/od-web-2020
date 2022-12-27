@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "type": 2,
+        "title": "Charla en Agile Trends 2022",
+        "content": {
+            "text": "15 minutos de Business Agility en Latam"
+        },
+        "image": "video",
+        "url": {
+            "es": "https://share.hsforms.com/1oQ7BryUeRKyv--6JLaPYnQdwmhv",
+            "en": "https://vimeo.com/770765786",
+            "pt": "https://vimeo.com/772521425"
+        }
+    }
+]

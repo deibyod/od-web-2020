@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 
 import './App.css';
 
+import ResourcesSpacesContent from './data/ResourcesBoxesContent.json';
 import PersonalSpacesContent from './data/PersonalBoxesContent.json';
 import ProfessionalSpacesContent from './data/ProfessionalBoxesContent.json';
 import ReferralsContent from './data/ReferralsContent.json';
@@ -20,13 +21,16 @@ function App() {
       <div className="container">
         <Header />
         <Opening />
+        <SectionTitle title={"¿Qué constenidos gratuitos tengo?"}/>
+        <Boxes boxContent={ResourcesSpacesContent} />
+        <SectionTitle title={"¿Dónde estoy en internet?"}/>
         <h1>PROFESIONAL</h1>
         <Boxes boxContent={ProfessionalSpacesContent} />
         <h1>PERSONAL</h1>
         <Boxes boxContent={PersonalSpacesContent} />
         <h1>REFERIDOS</h1>
         <ReferralOptions optionContent={ReferralsContent} />
-        <SectionTitle />
+        <SectionTitle title={"¿Dónde estoy presencialmente?"}/>
         <Map />
         <Footer />
       </div>

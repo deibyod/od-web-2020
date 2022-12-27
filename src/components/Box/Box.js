@@ -15,6 +15,7 @@ import ig6 from "../../images/ig/ig-6.png";
 import ig7 from "../../images/ig/ig-7.png";
 import ig8 from "../../images/ig/ig-8.png";
 import youtube from '../../images/social/youtube.png';
+import video from '../../images/resources/video.png';
 import twitter from '../../images/social/twitter.png';
 import blog from "../../images/blog.png";
 
@@ -43,6 +44,8 @@ class Box extends Component {
                 return facebook;
             case 'youtube':
                 return youtube;
+            case 'video':
+                return video;
             default:
                 return this.props.box.image;
         }
@@ -115,7 +118,6 @@ class Box extends Component {
                         { this.state.text_route.optionone? <button className="flow-button" onClick={this.oneFlowAction}>{this.state.buttontext? this.state.buttontext.one : "Opción 1"}</button> : "" }
                         { this.state.text_route.optiontwo? space : ""}
                         { this.state.text_route.optiontwo? <button className="flow-button" onClick={this.twoFlowAction}>{this.state.buttontext.two? this.state.buttontext.two : "Opción 2"}</button>: "" }
-
                         { this.state.text_route.buttonimages? <div className="images-button">
                             <img className="images-button-img" alt="IG" src={ig1}/>
                             <img className="images-button-img" alt="IG" src={ig2}/>
@@ -127,7 +129,7 @@ class Box extends Component {
                             <img className="images-button-img" alt="IG" src={ig8}/>
                         </div> : "" }
                     </div>
-                    <a href={box.url} target="_blank" rel="noopener noreferrer">
+                    <a href={typeof box.url === 'object'? box.url.es : box.url} target="_blank" rel="noopener noreferrer">
                         <div className="graphic-button">
                             <img alt="Box graphic" src={this.getImage()} /><img alt="Box arrow button" src={arrowButton} className="arrow-button"></img>
                         </div>

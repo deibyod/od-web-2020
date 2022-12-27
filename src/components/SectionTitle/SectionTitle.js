@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './section-title.scss';
 
-const SectionTitle = ()  => {
-    return(
-        <div className="section-title-container">
-            <h2>¿Dónde estoy?</h2>
-        </div>
-    )
+class SectionTitle extends Component {
+    render() {
+        console.log( this.props.title);
+        return(
+            <div className="section-title-container">
+                { this.props.title? <h1>{this.props.title}</h1>  : "" }
+            </div>
+        )
+    }
 }
 
 export default SectionTitle;
