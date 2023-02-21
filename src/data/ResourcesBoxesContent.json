@@ -2,15 +2,24 @@
     {
         "id": 1,
         "type": 2,
-        "title": "Charla en Agile Trends 2022",
+        "title": "5 Tentencias de Business Agility en Latam",
         "content": {
-            "text": "15 minutos de Business Agility en Latam"
+            "text": "Charla realizada en Agile Trends 2022. <br><strong>Duración:</strong> 15 minutos."
         },
         "image": "video",
         "url": {
-            "es": "https://share.hsforms.com/1oQ7BryUeRKyv--6JLaPYnQdwmhv",
-            "en": "https://vimeo.com/770765786",
-            "pt": "https://vimeo.com/772521425"
+            "es": {
+                "text": "Español",
+                "url": "https://share.hsforms.com/1oQ7BryUeRKyv--6JLaPYnQdwmhv"
+            },
+            "en": {
+                "text": "English",
+                "url": "https://vimeo.com/770765786"
+            },
+            "pt": {
+                "text": "Português",
+                "url": "https://vimeo.com/772521425"
+            }
         }
     }
 ]

@@ -15,7 +15,7 @@ import ig6 from "../../images/ig/ig-6.png";
 import ig7 from "../../images/ig/ig-7.png";
 import ig8 from "../../images/ig/ig-8.png";
 import youtube from '../../images/social/youtube.png';
-import video from '../../images/resources/video.png';
+import video from '../../images/resources/video.svg';
 import twitter from '../../images/social/twitter.png';
 import blog from "../../images/blog.png";
 
@@ -23,6 +23,7 @@ class Box extends Component {
     state = {
         flow_level: 0,
         flow_action: "",
+        box: this.props.box,
         text_route: this.props.box.content,
         text: this.props.box.content.text,
         buttontext: this.props.box.content.buttontext,
@@ -104,6 +105,34 @@ class Box extends Component {
         }
     }
 
+    getLink() {
+        let links = this.state.box.url;
+
+        if(typeof this.state.box.url === 'object') {
+            return(
+                <>
+                {Object.entries(links).map(([key, link]) => {
+                    return(
+                        <a key={key} href={link.url} target="_blank" rel="noopener noreferrer">
+                            <div className="graphic-button graphic-and-text-button">
+                                <img className='icon' alt="Box graphic" src={this.getImage()} /> {link.text} <img alt="Box arrow button" src={arrowButton} className="arrow-button"></img>
+                            </div>
+                        </a>
+                    )
+                })}
+                </>
+            )
+        } else {
+            return (
+                <a href={this.state.box.url} target="_blank" rel="noopener noreferrer">
+                    <div className="graphic-button">
+                        <img alt="Box graphic" src={this.getImage()} /><img alt="Box arrow button" src={arrowButton} className="arrow-button"></img>
+                    </div>
+                </a>
+            )
+        }
+     }
+
     render() {
         const {box} = this.props;
         const space = ' ';
@@ -129,11 +158,7 @@ class Box extends Component {
                             <img className="images-button-img" alt="IG" src={ig8}/>
                         </div> : "" }
                     </div>
-                    <a href={typeof box.url === 'object'? box.url.es : box.url} target="_blank" rel="noopener noreferrer">
-                        <div className="graphic-button">
-                            <img alt="Box graphic" src={this.getImage()} /><img alt="Box arrow button" src={arrowButton} className="arrow-button"></img>
-                        </div>
-                    </a>
+                    {this.getLink()}
                 </div>
             </div>
         )
