@@ -1,2 +1,140 @@
-.content-container {
+.box-container {
+    background-size: 100% 100%;
+    color: #555;
+    padding: 1.8em;
+    margin: 1.5em;
+    width: 22vw;
+    min-width: 230px;
+    min-height: 15vw;
+    font-size: 0.8em;
+    position: relative;
+
+    h2 {
+        font-size: 1.4em;
+        font-weight: 300;
+        text-decoration: none;
+    }
+
+    button.flow-button {
+        display: inline-block;
+        padding: 0.3em 0.8em;
+        margin-bottom: 1em;
+        background-color: #D26B73;
+        border: 0;
+        border-radius: 1em;
+        min-width: 45px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    .primary-action, .secondary-action {
+        display: inline-block;
+        padding: 0.4em 1em;
+        margin: 0.6em 0;
+        border: 0;
+        border-radius: 1em;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    .primary-action {
+        background-color: #D26B73;
+    }
+
+    .secondary-action {
+        background-color: #28B8CE;
+    }
+
+    &.maximized {
+        width: 100vw;
+        height: 100vh;
+        font-size: 1.1em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 9;
+        background-color: #00000053;
+        background-image: none !important;
+        display: flex;
+        align-items: center;
+
+        .box-content {
+            max-width: 80vw;
+        }
+    }
+
+    &.box-1 {
+        background-image: url(./images/box-bg-1.png);
+    }
+    &.box-2 {
+        background-image: url(./images/box-bg-2.png);
+    }
+    &.box-3 {
+        background-image: url(./images/box-bg-3.png);
+    }
+    &.box-blue {
+        background-image: url(./images/box-bg-blue.png);
+    }
+
+    .box-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #fff;
+        padding: 1.2em;
+        margin: 0 auto;
+        min-height: 14vw;
+        border-radius: 0.8em;
+        box-shadow: 0 0 0.3em rgba(0,0,0,0.16);
+
+        .separator {
+            max-width: 80px;
+            margin-top: 0.8em;
+        }
+
+        .box-text {
+            min-height: 7.8em;
+        }
+
+        .box-html-text {
+            min-height: 4em;
+        }
+
+        .images-button {
+            .images-button-img {
+                max-width: 20%;
+                margin: 0 0.2em;
+            }
+        }
+
+        .graphic-button {
+            padding: 0.8em 0.8em 0 0.8em;
+            border-top: 1px solid rgb(232,232,232);
+
+            img {
+                max-height: 1.8em;
+                max-width: 60%;
+            }
+
+            .arrow-button {
+                float: right;
+            }
+        }
+        .graphic-and-text-button {
+            padding: 0.8em 0.8em 0.5em 0.8em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            img.icon {
+                max-width: 40%;
+            }
+        }
+    }
 }
