@@ -19,11 +19,13 @@ class Content extends Component {
     }
 
     getContent() {
+        console.log("getContent");
+        console.log(this.state.profile);
         switch (this.state.profile) {
             case 'eac':
-                return this.getEACContent();
+                return "Enterprise Agile Coach - Sección En Construcción";
             case 'sd':
-                return "Software Developer - En Construcción";
+                return "Software Developer - Sección En Construcción";
             case 'personal':
                 return this.getPersonalContent();
             default:
@@ -32,16 +34,11 @@ class Content extends Component {
     }
 
     goToProfile = (event) => {
-        console.log(event);
-        if(this.state.profile !== "personal") {
-            this.setState({
-                maximize: "personal"
-            });
-        } else {
-            this.setState({
-                maximize: "eac"
-            });
-        }
+        const profile = event.currentTarget.getAttribute('data-profile');
+
+        this.setState({
+            profile: profile
+        });
     }
 
     getPersonalContent() {
@@ -77,7 +74,11 @@ class Content extends Component {
         return(
             <div className="content-container">
                 <h1>PERFILES</h1>
-                <div className='tab-bar'><a href="#">Enterprise Agile Coach</a><a href="#">Software Developer</a><a href="#">Personal</a></div>
+                <div className='tab-bar'>
+                    <span data-profile="eac" onClick={this.goToProfile}>Enterprise Agile Coach</span>
+                    <span data-profile="sd" onClick={this.goToProfile}>Software Developer</span>
+                    <span data-profile="personal" onClick={this.goToProfile}>Personal</span>
+                </div>
                 {this.getContent()}
             </div>
         )
