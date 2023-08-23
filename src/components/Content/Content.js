@@ -21,7 +21,7 @@ class Content extends Component {
     getContent() {
         switch (this.state.profile) {
             case 'eac':
-                return "Enterprise Agile Coach - Perfil En Construcción";
+                return this.getEACContent();
             case 'sd':
                 return "Software Developer - En Construcción";
             case 'personal':
@@ -31,14 +31,15 @@ class Content extends Component {
         }
     }
 
-    toggleMaximize = (event) => {
-        if(this.state.maximize === "minimized") {
+    goToProfile = (event) => {
+        console.log(event);
+        if(this.state.profile !== "personal") {
             this.setState({
-                maximize: "maximized"
+                maximize: "personal"
             });
         } else {
             this.setState({
-                maximize: "minimized"
+                maximize: "eac"
             });
         }
     }
@@ -46,8 +47,6 @@ class Content extends Component {
     getPersonalContent() {
         return(
             <div className="personal-content-container">
-                <SectionTitle title={"¿Qué contenidos gratuitos tengo?"}/>
-                <Boxes boxContent={ResourcesSpacesContent} />
                 <Subscription />
                 <SectionTitle title={"¿Dónde estoy en internet?"}/>
                 <h1>PROFESIONAL</h1>
@@ -61,10 +60,24 @@ class Content extends Component {
             </div>
         )
      }
+     getEACContent() {
+        return(
+            <div className="eac-content-container">
+                <SectionTitle title={"¿Que contenidos tengo para compartir?"}/>
+                <Boxes boxContent={ResourcesSpacesContent} />
+                <Subscription />
+                <SectionTitle title={"Cuales son mis redes profesionales?"}/>
+                <h1>CURRICULUM COMPLETO</h1>
+                <Boxes boxContent={ProfessionalSpacesContent} />
+            </div>
+        )
+     }
 
     render() {
         return(
             <div className="content-container">
+                <h1>PERFILES</h1>
+                <div className='tab-bar'><a href="#">Enterprise Agile Coach</a><a href="#">Software Developer</a><a href="#">Personal</a></div>
                 {this.getContent()}
             </div>
         )

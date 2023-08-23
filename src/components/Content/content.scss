@@ -1,2 +1,16 @@
 .content-container {
+    .tab-bar a {
+        padding: 1em;
+        border-radius: 5px;
+        margin: 1em;
+        border: #d0d0d0 1px solid;
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+
+        &:hover {
+            background-color: #FFF;
+            box-shadow: #cecece 0 0.3em 0.5em;
+        }
+    }
 }
