@@ -1,0 +1,26 @@
+[
+    {
+        "id": 21,
+        "type": 1,
+        "title": "VIGENCIA",
+        "content": {
+            "text": "Quiero mantenerme actualizado, explorar nuevas tecnologías y posibilidades"
+        }
+    },
+    {
+        "id": 22,
+        "type": 2,
+        "title": "CONSISTENCIA",
+        "content": {
+            "text": "Estoy abierto a pequeños proyectos y aportes, pero gustaría, sobre todo, colaboraciones duraderas con baja dedicación."
+        }
+    },
+    {
+        "id": 23,
+        "type": 3,
+        "title": "RESULTADOS",
+        "content": {
+            "text": "Me interesa generar colaboraciones que generen resultados positivos."
+        }
+    }
+]

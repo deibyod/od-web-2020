@@ -12,6 +12,7 @@ import ResourcesSpacesContent from '../../data/ResourcesBoxesContent.json';
 import PersonalSpacesContent from '../../data/PersonalBoxesContent.json';
 import ProfessionalSpacesContent from '../../data/ProfessionalBoxesContent.json';
 import ReferralsContent from '../../data/ReferralsContent.json';
+import SwDevInterestBoxesContent from '../../data/SwDevInterestBoxesContent.json';
 
 class Content extends Component {
     state = {
@@ -19,13 +20,13 @@ class Content extends Component {
     }
 
     getContent() {
-        console.log("getContent");
-        console.log(this.state.profile);
         switch (this.state.profile) {
             case 'eac':
-                return "Enterprise Agile Coach - Sección En Construcción";
+                return this.getEACContent();
             case 'sd':
-                return "Software Developer - Sección En Construcción";
+                return this.getSoftwareDevContent();
+            case 'shop':
+                return this.getOnlineShopContent();
             case 'personal':
                 return this.getPersonalContent();
             default:
@@ -57,18 +58,44 @@ class Content extends Component {
             </div>
         )
      }
-     getEACContent() {
+    getEACContent() {
         return(
             <div className="eac-content-container">
                 <SectionTitle title={"¿Que contenidos tengo para compartir?"}/>
                 <Boxes boxContent={ResourcesSpacesContent} />
-                <Subscription />
                 <SectionTitle title={"Cuales son mis redes profesionales?"}/>
-                <h1>CURRICULUM COMPLETO</h1>
                 <Boxes boxContent={ProfessionalSpacesContent} />
             </div>
         )
-     }
+    }
+
+    getSoftwareDevContent() {
+        return(
+            <div className="softwaredev-content-container">
+                <SectionTitle title={"¿Qué he hecho?"}/>
+                <div className={`opening-container`}>
+                    <div className={`opening-content`}>
+                        Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años. Proximamente, aquí cargaré mi portafolio histórico.
+                    </div>
+                </div>
+                <SectionTitle title={"Cuales son mis intereses?"}/>
+                <Boxes boxContent={SwDevInterestBoxesContent} />
+            </div>
+        )
+    }
+
+    getOnlineShopContent() {
+        return(
+            <div className="onlineshop-content-container">
+                <SectionTitle title={"Proximamente..."}/>
+                <div className={`opening-container`}>
+                    <div className={`opening-content`}>
+                    Estamos trabajando en un nuevo proyecto de Tienda en Línea. Esperalo pronto.
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     render() {
         return(
@@ -77,6 +104,7 @@ class Content extends Component {
                 <div className='tab-bar'>
                     <span data-profile="eac" onClick={this.goToProfile}>Enterprise Agile Coach</span>
                     <span data-profile="sd" onClick={this.goToProfile}>Software Developer</span>
+                    <span data-profile="shop" onClick={this.goToProfile}>Tienda Online</span>
                     <span data-profile="personal" onClick={this.goToProfile}>Personal</span>
                 </div>
                 {this.getContent()}

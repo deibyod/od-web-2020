@@ -108,6 +108,8 @@ class Box extends Component {
     getLink() {
         let links = this.state.box.url;
 
+        console.log(this.state.box.url);
+
         if(typeof this.state.box.url === 'object') {
             return(
                 <>
@@ -122,7 +124,7 @@ class Box extends Component {
                 })}
                 </>
             )
-        } else {
+        } else if (this.state.box.url !== undefined) {
             return (
                 <a href={this.state.box.url} target="_blank" rel="noopener noreferrer">
                     <div className="graphic-button">
@@ -130,6 +132,8 @@ class Box extends Component {
                     </div>
                 </a>
             )
+        } else {
+            return ("")
         }
      }
 
