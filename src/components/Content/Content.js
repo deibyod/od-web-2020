@@ -15,17 +15,17 @@ import ReferralsContent from '../../data/ReferralsContent.json';
 
 class Content extends Component {
     state = {
-        profile: this.props.content.profile
+        profile: "personal"
     }
 
     getContent() {
-        switch (this.props.content.profile) {
+        switch (this.state.profile) {
             case 'eac':
                 return "Enterprise Agile Coach - Perfil En Construcción";
             case 'sd':
                 return "Software Developer - En Construcción";
             case 'personal':
-                return getPersonalContent();
+                return this.getPersonalContent();
             default:
                 return this.getPersonalContent();
         }
@@ -45,7 +45,7 @@ class Content extends Component {
 
     getPersonalContent() {
         return(
-            <div className="content-container">
+            <div className="personal-content-container">
                 <SectionTitle title={"¿Qué contenidos gratuitos tengo?"}/>
                 <Boxes boxContent={ResourcesSpacesContent} />
                 <Subscription />
@@ -63,12 +63,10 @@ class Content extends Component {
      }
 
     render() {
-        const {content} = this.props;
-
         return(
-            <React.Fragment>
+            <div className="content-container">
                 {this.getContent()}
-            </React.Fragment>
+            </div>
         )
     }
 }
