@@ -26,6 +26,8 @@ class ContentManager extends Component {
                 return this.getEACContent();
             case 'sd':
                 return this.getSoftwareDevContent();
+            case 'investor':
+                return this.getPrivateInvestorContent();
             case 'shop':
                 return this.getOnlineShopContent();
             case 'personal':
@@ -59,7 +61,7 @@ class ContentManager extends Component {
             </div>
         )
      }
-    
+
     getEACContent() {
         return(
             <div className="eac-content-container">
@@ -84,6 +86,17 @@ class ContentManager extends Component {
         )
     }
 
+    getPrivateInvestorContent() {
+        const privateInvestorContent = "Invierto en distintos instrumentos. Proximamente espero cargar aquí contenido relativo a mis labores de inversión."; 
+
+        return(
+            <div className="softwaredev-content-container">
+                <SectionTitle title={"¿Qué hago?"}/>
+                <ContentContainer content={privateInvestorContent} />
+            </div>
+        )
+    }
+
     getOnlineShopContent() {
         const onlineShopContent = "Estamos trabajando en un nuevo proyecto de Tienda en Línea. Esperalo pronto.";
 
@@ -100,10 +113,11 @@ class ContentManager extends Component {
             <div className="content-manager-container">
                 <h1>PERFILES</h1>
                 <div className='tab-bar'>
-                    <span data-profile="eac" onClick={this.goToProfile}>Enterprise Agile Coach</span>
-                    <span data-profile="sd" onClick={this.goToProfile}>Software Developer</span>
-                    <span data-profile="shop" onClick={this.goToProfile}>Tienda Online</span>
-                    <span data-profile="personal" onClick={this.goToProfile}>Personal</span>
+                    <span className={ this.state.profile === "eac" ? "active" : "" } data-profile="eac" onClick={this.goToProfile}>Enterprise Agile Coach</span>
+                    <span className={ this.state.profile === "sd" ? "active" : "" } data-profile="sd" onClick={this.goToProfile}>Software Developer</span>
+                    <span className={ this.state.profile === "investor" ? "active" : "" } data-profile="investor" onClick={this.goToProfile}>Inversor Privado</span>
+                    <span className={ this.state.profile === "shop" ? "active" : "" } data-profile="shop" onClick={this.goToProfile}>Tienda Online</span>
+                    <span className={ this.state.profile === "personal" ? "active" : "" } data-profile="personal" onClick={this.goToProfile}>Personal</span>
                 </div>
 
                 {this.getContent()}
