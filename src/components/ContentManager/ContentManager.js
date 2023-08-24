@@ -74,7 +74,7 @@ class ContentManager extends Component {
     }
 
     getSoftwareDevContent() {
-        const softwareDevContent = "Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años. Proximamente, aquí cargaré mi portafolio histórico."; 
+        const softwareDevContent = "Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años. En el futuro cargaré aquí mi portafolio histórico."; 
 
         return(
             <div className="softwaredev-content-container">
