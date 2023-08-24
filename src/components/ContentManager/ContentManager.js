@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
+import ContentContainer from '../ContentContainer/ContentContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Subscription from '../Subscription/Subscription';
 import Boxes from '../Boxes/Boxes';
 import ReferralOptions from '../ReferralOptions/ReferralOptions';
 import Map from '../Map/Map';
 
-import './content.scss';
+import './content-manager.scss';
 
 import ResourcesSpacesContent from '../../data/ResourcesBoxesContent.json';
 import PersonalSpacesContent from '../../data/PersonalBoxesContent.json';
@@ -14,7 +15,7 @@ import ProfessionalSpacesContent from '../../data/ProfessionalBoxesContent.json'
 import ReferralsContent from '../../data/ReferralsContent.json';
 import SwDevInterestBoxesContent from '../../data/SwDevInterestBoxesContent.json';
 
-class Content extends Component {
+class ContentManager extends Component {
     state = {
         profile: "personal"
     }
@@ -58,6 +59,7 @@ class Content extends Component {
             </div>
         )
      }
+    
     getEACContent() {
         return(
             <div className="eac-content-container">
@@ -70,14 +72,12 @@ class Content extends Component {
     }
 
     getSoftwareDevContent() {
+        const softwareDevContent = "Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años. Proximamente, aquí cargaré mi portafolio histórico."; 
+
         return(
             <div className="softwaredev-content-container">
                 <SectionTitle title={"¿Qué he hecho?"}/>
-                <div className={`opening-container`}>
-                    <div className={`opening-content`}>
-                        Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años. Proximamente, aquí cargaré mi portafolio histórico.
-                    </div>
-                </div>
+                <ContentContainer content={softwareDevContent} />
                 <SectionTitle title={"Cuales son mis intereses?"}/>
                 <Boxes boxContent={SwDevInterestBoxesContent} />
             </div>
@@ -85,21 +85,19 @@ class Content extends Component {
     }
 
     getOnlineShopContent() {
+        const onlineShopContent = "Estamos trabajando en un nuevo proyecto de Tienda en Línea. Esperalo pronto.";
+
         return(
             <div className="onlineshop-content-container">
                 <SectionTitle title={"Proximamente..."}/>
-                <div className={`opening-container`}>
-                    <div className={`opening-content`}>
-                    Estamos trabajando en un nuevo proyecto de Tienda en Línea. Esperalo pronto.
-                    </div>
-                </div>
+                <ContentContainer content={onlineShopContent} />
             </div>
         )
     }
 
     render() {
         return(
-            <div className="content-container">
+            <div className="content-manager-container">
                 <h1>PERFILES</h1>
                 <div className='tab-bar'>
                     <span data-profile="eac" onClick={this.goToProfile}>Enterprise Agile Coach</span>
@@ -107,10 +105,11 @@ class Content extends Component {
                     <span data-profile="shop" onClick={this.goToProfile}>Tienda Online</span>
                     <span data-profile="personal" onClick={this.goToProfile}>Personal</span>
                 </div>
+
                 {this.getContent()}
             </div>
         )
     }
 }
 
-export default Content;
+export default ContentManager;

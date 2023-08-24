@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from './components/Header/Header';
 import Opening from './components/Opening/Opening';
-import Content from './components/Content/Content';
+import ContentManager from './components/ContentManager/ContentManager';
 import Footer from './components/Footer/Footer';
 
 import './App.css';
@@ -13,7 +13,7 @@ function App() {
       <div className="container">
         <Header />
         <Opening />
-        <Content />
+        <ContentManager />
         <Footer />
       </div>
     </div>

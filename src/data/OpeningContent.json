@@ -2,6 +2,6 @@
     "id": 1,
     "title": "DISCLAIMER",
     "content": {
-        "text": "Trabajo y experimento con esta web en mis tiempos libres (con muy muy poca frecuencia, pero sin abandonarlo). Está hecha en React, con módulos y funciones 100% construidas por mi, sin plugins, usando Git para versionar mi código y Github pages para un despliegue continuo, con fines de práctica y experimentación. <br>Gracias por visitarme."
+        "text": "Trabajo y experimento con esta web en mis tiempos libres. Está hecha en React, con módulos y funciones 100% construidas por mi, sin plugins, usando Git para versionar mi código y Github pages para disponibilizarla, con fines de práctica y experimentación. <br>Gracias por visitarme."
     }
 }
