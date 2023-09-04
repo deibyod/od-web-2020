@@ -1,0 +1,18 @@
+[
+    {
+        "id": 100,
+        "type": 1,
+        "title": "Business Agility Assessment",
+        "content": {
+            "text": "Una organización es tan ágil como su equipo menos ágil. Realizo diagnósticos de Agilidad Empresarial o Business Agility con un enfoque integral, utilizando modelos de referencia mundial o modelos construidos adhoc. Incluyen Diagnóstico, Recomendaciones, Plan de Acción de corto, mediano y largo plazo, y Acompañamiento en la ejecución (si te recomiendo hacerlo, no me quedo en palabras, puedo ayudarte a lograrlo, hasta dónde tu compañía decida continuar por su cuenta)."
+        }
+    },
+    {
+        "id": 100,
+        "type": 1,
+        "title": "Temporary Agile Leadership",
+        "content": {
+            "text": "Me integro 100% en tu compañía para liderar el proceso de adopción/transformación ágil, tomando el rol de liderazgo como lo haría una ejecutivo interno, pero de forma temporal, hasta que designes una persona de tu confianza que continue el proceso."
+        }
+    }
+]

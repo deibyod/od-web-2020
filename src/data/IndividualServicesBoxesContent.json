@@ -1,0 +1,34 @@
+[
+    {
+        "id": 200,
+        "type": 1,
+        "title": "Agile Personal Coaching",
+        "content": {
+            "text": "En esta sesión acompañaré tu proceso de descubrimiento profesional para enfrentar, clarificar y resolver tus mayores desafíos, deseos u oportunidades actuales. No realizo recomendaciones o asesorías, te ayudo a reflexionar y encontrar tus propias respuestas, pero no desde un enfoque pasivo, si acudes a mi, sé que estás en busca de ayuda, me aseguraré de ayudarte a definir tu próxima acción concreta para movilizar lo que estas buscando. Contactame para programar tus sesiones."
+        }
+    },
+    {
+        "id": 201,
+        "type": 2,
+        "title": "Agile Personal Mentoring",
+        "content": {
+            "text": "En este proceso te orientaré, a partir de mi experiencia real, a encontrar soluciones y rumbos para tus propios desafíos y basados en tu recorrido personal. Te abriré opciones y posibilidades, pero serás responsable de tomar decisiones que te permitan avanzar. Contactame para programar tus sesiones."
+        }
+    },
+    {
+        "id": 202,
+        "type": 3,
+        "title": "Agile Personal Training",
+        "content": {
+            "text": "Preparación y realización de entrenamientos personalizados acordes a tus necesidades formativas actuales, con enfoque pragmático y buscando la consolidación de tus conocimientos. Contactame para programar tus sesiones."
+        }
+    },
+    {
+        "id": 203,
+        "type": 1,
+        "title": "Acompañamiento Integral Agile",
+        "content": {
+            "text": "En estas sesiones integro Coaching, Mentoring y Training para acompañar integralmente y de forma personalizada la consecución de tus objetivos profesionales."
+        }
+    }
+]
