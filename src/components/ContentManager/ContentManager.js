@@ -9,7 +9,7 @@ import Map from '../Map/Map';
 
 import './content-manager.scss';
 
-import CorporativeServicesContent from '../../data/CorporativeServicesBoxesContent.json';
+import CorporateServicesContent from '../../data/CorporateServicesBoxesContent.json';
 import IndividualServicesContent from '../../data/IndividualServicesBoxesContent.json';
 import ResourcesSpacesContent from '../../data/ResourcesBoxesContent.json';
 import PersonalSpacesContent from '../../data/PersonalBoxesContent.json';
@@ -68,7 +68,7 @@ class ContentManager extends Component {
         return(
             <div className="eac-content-container">
                 <SectionTitle title={"¿Qué Servicios Corporativos ofrezco?"}/>
-                <Boxes boxContent={CorporativeServicesContent} />
+                <Boxes boxContent={CorporateServicesContent} />
                 <SectionTitle title={"¿Qué Servicios Individuales ofrezco?"}/>
                 <Boxes boxContent={IndividualServicesContent} />
                 <SectionTitle title={"¿Que contenidos tengo para compartir?"}/>
