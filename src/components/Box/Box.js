@@ -80,7 +80,7 @@ class Box extends Component {
     }
 
     imagesButtonFlowAction = () => {
-        console.log("imagesselection");
+        //console.log("imagesselection");
     }
 
     toggleMaximize = (event) => {
@@ -108,7 +108,7 @@ class Box extends Component {
     getLink() {
         let links = this.state.box.url;
 
-        console.log(this.state.box.url);
+        //console.log(this.state.box.url);
 
         if(typeof this.state.box.url === 'object') {
             return(

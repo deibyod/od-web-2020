@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Routes, Route} from 'react-router-dom';
 
 import ContentContainer from '../ContentContainer/ContentContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -9,6 +10,7 @@ import Map from '../Map/Map';
 
 import './content-manager.scss';
 
+import TabBar from '../TabBar/TabBar';
 import CorporateServicesContent from '../../data/CorporateServicesBoxesContent.json';
 import IndividualServicesContent from '../../data/IndividualServicesBoxesContent.json';
 import ResourcesSpacesContent from '../../data/ResourcesBoxesContent.json';
@@ -18,34 +20,6 @@ import ReferralsContent from '../../data/ReferralsContent.json';
 import SwDevInterestBoxesContent from '../../data/SwDevInterestBoxesContent.json';
 
 class ContentManager extends Component {
-    state = {
-        profile: "personal"
-    }
-
-    getContent() {
-        switch (this.state.profile) {
-            case 'eac':
-                return this.getEACContent();
-            case 'sd':
-                return this.getSoftwareDevContent();
-            case 'investor':
-                return this.getPrivateInvestorContent();
-            case 'shop':
-                return this.getOnlineShopContent();
-            case 'personal':
-                return this.getPersonalContent();
-            default:
-                return this.getPersonalContent();
-        }
-    }
-
-    goToProfile = (event) => {
-        const profile = event.currentTarget.getAttribute('data-profile');
-
-        this.setState({
-            profile: profile
-        });
-    }
 
     getPersonalContent() {
         return(
@@ -117,16 +91,15 @@ class ContentManager extends Component {
     render() {
         return(
             <div className="content-manager-container">
-                <h1>PERFILES</h1>
-                <div className='tab-bar'>
-                    <span className={ this.state.profile === "eac" ? "active" : "" } data-profile="eac" onClick={this.goToProfile}>Enterprise Agile Coach</span>
-                    <span className={ this.state.profile === "sd" ? "active" : "" } data-profile="sd" onClick={this.goToProfile}>Software Developer</span>
-                    <span className={ this.state.profile === "investor" ? "active" : "" } data-profile="investor" onClick={this.goToProfile}>Inversor Privado</span>
-                    <span className={ this.state.profile === "shop" ? "active" : "" } data-profile="shop" onClick={this.goToProfile}>Tienda Online</span>
-                    <span className={ this.state.profile === "personal" ? "active" : "" } data-profile="personal" onClick={this.goToProfile}>Personal</span>
-                </div>
 
-                {this.getContent()}
+                <TabBar />
+                <Routes>
+                    <Route path="/enterprise-agile-coach" element={this.getEACContent()} />
+                    <Route path="/software-developer" element={this.getSoftwareDevContent()} />
+                    <Route path="/private-investor" element={this.getPrivateInvestorContent()} />
+                    <Route path="/online-store" element={this.getOnlineShopContent()} />
+                    <Route path="/personal" element={this.getPersonalContent()} />
+                </Routes>
             </div>
         )
     }
