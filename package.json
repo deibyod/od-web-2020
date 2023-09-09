@@ -1,17 +1,15 @@
 {
   "name": "od-web-2020",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "homepage": "https://www.deibyod.co",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,6 +35,13 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "@babel/core": "^7.22.17",
+    "@babel/plugin-syntax-flow": "^7.22.5",
+    "@babel/plugin-transform-react-jsx": "^7.22.15",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^6.1.3",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "gh-pages": "^6.0.0"
   }
 }
