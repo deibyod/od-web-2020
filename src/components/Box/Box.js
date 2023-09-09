@@ -15,7 +15,7 @@ import ig6 from "../../images/ig/ig-6.png";
 import ig7 from "../../images/ig/ig-7.png";
 import ig8 from "../../images/ig/ig-8.png";
 import youtube from '../../images/social/youtube.png';
-import video from '../../images/resources/video.svg';
+import video from '../../images/resources/video.png';
 import twitter from '../../images/social/twitter.png';
 import blog from "../../images/blog.png";
 
