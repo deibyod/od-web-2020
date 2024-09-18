@@ -1,8 +1,8 @@
 import React from 'react';
 import './header.scss';
 
-import PersonalPhoto1 from './images/photos/deibyod-1.png';
-import PersonalPhoto2 from './images/photos/deibyod-2.png';
+import PersonalPhoto1 from './images/photos/deibyod-1.jpg';
+import PersonalPhoto2 from './images/photos/deibyod-2.jpg';
 import PersonalPhoto3 from './images/photos/deibyod-3.png';
 import PersonalPhoto4 from './images/photos/deibyod-4.png';
 import PersonalPhoto5 from './images/photos/deibyod-5.jpg';
