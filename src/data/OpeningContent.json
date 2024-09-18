@@ -1,7 +1,7 @@
 {
     "id": 1,
-    "title": "DISCLAIMER",
+    "title": "¡HOLA!",
     "content": {
-        "text": "Trabajo y experimento con esta web en mis tiempos libres. Está hecha en React, con módulos, diseño y funciones 100% construidas a mano, sin plugins. Uso Git para versionar mi código y Github pages para es despligue funcional, con fines de práctica y experimentación. <br>Gracias por visitarme."
+        "text": "Te doy la bienvenida a mi sitio web personal. Encontrarás un poco de mis distintas facetas. <br>Powered by React, Github y otras cositas más. <br>Gracias por visitarme."
     }
 }
