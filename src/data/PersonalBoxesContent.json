@@ -2,9 +2,9 @@
     {
         "id": 1,
         "type": 2,
-        "title": "MIS FOTOGRAFÍAS",
+        "title": "MI INSTAGRAM",
         "content": {
-            "text": "Saco algunas fotografías <br><strong>¿Validamos si te gustaría verlas?</strong>",
+            "text": "Un poco de mí en fotos e Stories <br><strong>¿Validamos si te gustaría seguirme?</strong>",
             "buttontext": {
                 "one": "Validemos"
             },
@@ -18,9 +18,9 @@
     {
         "id": 2,
         "type": 3,
-        "title": "MIS IDEAS EN CORTO",
+        "title": "MI TWITTER (X?)",
         "content": {
-            "text": "Si eres de los que prefieren intercambiar “buenas” ideas en corto, te invito a seguirnos."
+            "text": "Intercambiar ideas polémicas, en corto."
         },
         "image": "twitter",
         "url": "https://twitter.com/deibyod"
@@ -28,9 +28,9 @@
     {
         "id": 3,
         "type": 1,
-        "title": "MI CIRCULO DE AMIG@S",
+        "title": "MI FACEBOOK",
         "content": {
-            "text": "¿Nos conocemos personalmente? Me alegraría conectar contigo más cotidianamente. Continuemos conociéndonos y conectando."
+            "text": "¿Nos conocemos personalmente? Mi red social más antigüa antiva"
         },
         "image": "facebook",
         "url": "https://www.facebook.com/deibyod/"
@@ -38,9 +38,9 @@
     {
         "id": 4,
         "type": 2,
-        "title": "MIS VIAJES",
+        "title": "YOUTUBER DE VIAJES",
         "content": {
-            "text": "Ocasionalmente experimento con algo. Conoce nuestro naciente canal de viajes GoTravel."
+            "text": "Conoce mi corta carrera como youtuber de viajes: GoTravel (al final, simplemente seguí viajando, jeje)."
         },
         "image": "youtube",
         "url": "https://www.youtube.com/channel/UC7PSm60sA0_URrmLZ9L_q3Q"
@@ -48,7 +48,7 @@
     {
         "id": 5,
         "type": 3,
-        "title": "MIS VIDEOS DIVERSOS",
+        "title": "MI YOUTUBE",
         "content": {
             "text": "Algunos videos muy antiguos y diversos en mi viejo canal."
         },
@@ -58,9 +58,9 @@
     {
         "id": 6,
         "type": "blue",
-        "title": "MIS ESCRITOS DIVERSOS",
+        "title": "MI BLOG",
         "content": {
-            "text": "Algunas ideas y expresiones diversas."
+            "text": "Algunas ideas, aprendizajes y expresiones diversas."
         },
         "image": "blog",
         "url": "https://blog.deibyod.co"
