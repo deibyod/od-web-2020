@@ -78,11 +78,11 @@ class ContentManager extends Component {
     }
 
     getOnlineShopContent() {
-        const onlineShopContent = "Estamos trabajando en un nuevo proyecto de Tienda en Línea. Esperalo pronto.";
+        const onlineShopContent = "Una tienda para ser diferentes (BETA): http://vorder.deibyod.co";
 
         return(
             <div className="onlineshop-content-container">
-                <SectionTitle title={"Proximamente..."}/>
+                <SectionTitle title={"Vorder"}/>
                 <ContentContainer content={onlineShopContent} />
             </div>
         )

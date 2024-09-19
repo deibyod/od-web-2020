@@ -21,5 +21,25 @@
                 "url": "https://vimeo.com/772521425"
             }
         }
+    },
+    {
+        "id": 2,
+        "type": 2,
+        "title": "MIS APARICIONES EN VIDEO",
+        "content": {
+            "text": "Una lista de youtube con algunas de mis participaciones en charlas, recursos, eventos y otros contenidos en video."
+        },
+        "image": "youtube",
+        "url": "https://www.youtube.com/watch?v=mJP0u_V4n1s&list=PLnrDiaVpy5TNqD3UP0Vl2CFUpM-yvFtez"
+    },
+    {
+        "id": 7,
+        "type": 3,
+        "title": "MIS ESCRITOS DIVERSOS",
+        "content": {
+            "text": "Algunos de mis escritos ocasionales en distintos tópicos, especialmente (pero no limitado a) agile/agilidad, software y cultura libre."
+        },
+        "image": "blog",
+        "url": "https://blog.deibyod.co"
     }
 ]
