@@ -2,6 +2,6 @@
     "id": 1,
     "title": "¡HOLA!",
     "content": {
-        "text": "Te doy la bienvenida a mi sitio web personal. Encontrarás un poco de mis distintas facetas. <br>Powered by React, Github y otras cositas más. <br>Gracias por visitarme."
+        "text": "Te doy la bienvenida a mi sitio web personal. Encontrarás un poco de mis distintas facetas."
     }
 }

@@ -3,10 +3,10 @@ import './header.scss';
 
 import PersonalPhoto1 from './images/photos/deibyod-1.jpg';
 import PersonalPhoto2 from './images/photos/deibyod-2.jpg';
-import PersonalPhoto3 from './images/photos/deibyod-3.png';
-import PersonalPhoto4 from './images/photos/deibyod-4.png';
+import PersonalPhoto3 from './images/photos/deibyod-3.jpg';
+import PersonalPhoto4 from './images/photos/deibyod-4.jpg';
 import PersonalPhoto5 from './images/photos/deibyod-5.jpg';
-import PersonalPhoto6 from './images/photos/deibyod-6.png';
+import PersonalPhoto6 from './images/photos/deibyod-6.jpg';
 import PersonalPhoto7 from './images/photos/deibyod-7.jpg';
 
 const PersonalPhoto = [

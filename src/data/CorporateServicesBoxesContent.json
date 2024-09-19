@@ -2,25 +2,25 @@
     {
         "id": 100,
         "type": 1,
-        "title": "Training: Agile 360º",
+        "title": "Training & Mentoring",
         "content": {
-            "text": "En psicología en psicología existe algo llamado el Efecto Dunning-Kruger, en el que la falta de conocimientos en un ámbito específico puede hacernos creer sabemos más de lo que realmente sabemos (no sabemos lo que no sabemos), y a medida que se aprende, se adquiere una mirada más crítica de nuestros conocimientos. Así, creer saberlo todo es una posible señal de nuestro desconocimiento. Con la popularización de Agile esto se ha vuelto muy común: han escuchado tanto la palabra que suena repetitiva, pero pocas veces conoce todo lo que hay en ella. Este taller es una introducción, un overview general de las multiples posibilidades que hay en agile a lo largo y ancho de una compañía, un vistazo que nos permite conocer algunas de las cosas que hay, para luego elegir por dónde queremos empezar a profundizar (dónde nos es más ultil, por ejemplo). "
+            "text": "Entrenamientos y mentorías personalizadas"
         }
     },
     {
         "id": 101,
         "type": 2,
-        "title": "Business Agility Assessment",
+        "title": "Transformación Organizacional",
         "content": {
-            "text": "Una organización es tan ágil como su equipo menos ágil. Realizo diagnósticos de Agilidad Empresarial o Business Agility con un enfoque integral, utilizando modelos de referencia mundial o modelos construidos adhoc. Incluyen Diagnóstico, Recomendaciones, Plan de Acción de corto, mediano y largo plazo, y Acompañamiento en la ejecución (si te recomiendo hacerlo, no me quedo en palabras, puedo ayudarte a lograrlo, hasta dónde tu compañía decida continuar por su cuenta)."
+            "text": "Business Agility, Transformación Digital & Product Management"
         }
     },
     {
         "id": 102,
         "type": 3,
-        "title": "Temporary Agile Leadership",
+        "title": "Temporary Leadership",
         "content": {
-            "text": "Me integro 100% en tu compañía para liderar el proceso de adopción/transformación ágil, tomando el rol de liderazgo como lo haría una ejecutivo interno, pero de forma temporal, hasta que designes una persona de tu confianza que continue el proceso."
+            "text": "Liderazgo temporal de equipos de producto, tecnología y/o agilidad."
         }
     }
 ]
