@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.40947a06.css",
-    "main.js": "/static/js/main.b758fa7e.js",
-    "static/media/deibyod-5.jpg": "/static/media/deibyod-5.fc3a0de09402ae68201e.jpg",
+    "main.css": "/static/css/main.84bcfed5.css",
+    "main.js": "/static/js/main.79d2b532.js",
     "static/media/ig-4.png": "/static/media/ig-4.8b67a2f8de18584965d9.png",
     "static/media/world-map.png": "/static/media/world-map.61cebf93d69365efb3a1.png",
     "static/media/ig-7.png": "/static/media/ig-7.fe8c9dc47ad9b4b82940.png",
     "static/media/ig-3.png": "/static/media/ig-3.6716e84b0eaf2a7af339.png",
     "static/media/ig-5.png": "/static/media/ig-5.b21bd23898958adf47f4.png",
     "static/media/ig-1.png": "/static/media/ig-1.add34dce0b41c0a6bc73.png",
-    "static/media/deibyod-4.png": "/static/media/deibyod-4.ae94c8b827507224cc3a.png",
-    "static/media/deibyod-6.png": "/static/media/deibyod-6.084efe4c2181721751ba.png",
     "static/media/ig-2.png": "/static/media/ig-2.89aae50024b6b3b40714.png",
-    "static/media/deibyod-3.png": "/static/media/deibyod-3.5bf8bc0d38e8310a7fb9.png",
     "static/media/ig-6.png": "/static/media/ig-6.3f7b6c6e1a1b277706be.png",
     "static/media/ig-8.png": "/static/media/ig-8.ccd3a107cc9f04a7fd02.png",
-    "static/media/deibyod-7.jpg": "/static/media/deibyod-7.5ddc526f9006721f3c74.jpg",
     "static/media/header-img.png": "/static/media/header-img.c576377f82a87b14d7fc.png",
+    "static/media/deibyod-3.jpg": "/static/media/deibyod-3.8f5e696b6e0a99a9d454.jpg",
     "static/media/deibyod-1.jpg": "/static/media/deibyod-1.be6e1c4968ecdc980938.jpg",
+    "static/media/deibyod-6.jpg": "/static/media/deibyod-6.1318c4450448dd21437d.jpg",
+    "static/media/deibyod-5.jpg": "/static/media/deibyod-5.669c2f6861c63edd613e.jpg",
     "static/media/deibyod-2.jpg": "/static/media/deibyod-2.ee84f003f2b0374fd8ee.jpg",
+    "static/media/deibyod-4.jpg": "/static/media/deibyod-4.a3299e8a50595c070f4c.jpg",
     "static/media/header-img-mobile.png": "/static/media/header-img-mobile.a4960f01618045734e90.png",
     "static/media/box-bg-blue.png": "/static/media/box-bg-blue.ae0664d0e2e4013cb836.png",
     "static/media/footer-img.png": "/static/media/footer-img.fc6e0efa7cf3ac88f637.png",
     "static/media/world-map-mini.png": "/static/media/world-map-mini.f70194c06795453fa2a8.png",
+    "static/media/deibyod-7.jpg": "/static/media/deibyod-7.56612010bf4e31728ac9.jpg",
     "static/media/box-bg-1.png": "/static/media/box-bg-1.0b5bde3f4174294f8c0c.png",
     "static/media/box-bg-2.png": "/static/media/box-bg-2.c472817ed5254133e667.png",
     "static/media/box-bg-3.png": "/static/media/box-bg-3.15c8ad22b531b83ad89d.png",
@@ -33,11 +33,11 @@
     "static/media/blog.png": "/static/media/blog.0115f82b051da9728143.png",
     "static/media/logo.svg": "/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/index.html",
-    "main.40947a06.css.map": "/static/css/main.40947a06.css.map",
-    "main.b758fa7e.js.map": "/static/js/main.b758fa7e.js.map"
+    "main.84bcfed5.css.map": "/static/css/main.84bcfed5.css.map",
+    "main.79d2b532.js.map": "/static/js/main.79d2b532.js.map"
   },
   "entrypoints": [
-    "static/css/main.40947a06.css",
-    "static/js/main.b758fa7e.js"
+    "static/css/main.84bcfed5.css",
+    "static/js/main.79d2b532.js"
   ]
 }
