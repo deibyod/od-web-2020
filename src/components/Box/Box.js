@@ -18,6 +18,7 @@ import youtube from '../../images/social/youtube.png';
 import video from '../../images/resources/video.png';
 import twitter from '../../images/social/twitter.png';
 import blog from "../../images/blog.png";
+import vorder from "../../images/vorder.jpg";
 
 class Box extends Component {
     state = {

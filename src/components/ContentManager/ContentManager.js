@@ -18,6 +18,9 @@ import PersonalSpacesContent from '../../data/PersonalBoxesContent.json';
 import ProfessionalSpacesContent from '../../data/ProfessionalBoxesContent.json';
 import ReferralsContent from '../../data/ReferralsContent.json';
 import SwDevInterestBoxesContent from '../../data/SwDevInterestBoxesContent.json';
+import InvestmentstBoxesContent from '../../data/InvestmentsBoxesContent.json';
+import StoreBoxesContent from '../../data/StoreBoxesContent.json';
+
 
 class ContentManager extends Component {
 
@@ -54,36 +57,39 @@ class ContentManager extends Component {
     }
 
     getSoftwareDevContent() {
-        const softwareDevContent = "Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años. En el futuro cargaré aquí mi portafolio histórico."; 
+        const softwareDevContent = "Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años."; 
 
         return(
             <div className="softwaredev-content-container">
                 <SectionTitle title={"¿Qué he hecho?"}/>
                 <ContentContainer content={softwareDevContent} />
-                <SectionTitle title={"Cuales son mis intereses?"}/>
+                <SectionTitle title={"Mis intereses"}/>
                 <Boxes boxContent={SwDevInterestBoxesContent} />
             </div>
         )
     }
 
     getPrivateInvestorContent() {
-        const privateInvestorContent = "Invierto en distintos instrumentos. Proximamente espero cargar aquí contenido relativo a mis labores de inversión."; 
+        const privateInvestorContent = "Invierto en distintos instrumentos. Si compartes algún interés de inversión conmigo, conversémos."; 
 
         return(
             <div className="softwaredev-content-container">
                 <SectionTitle title={"¿Qué hago?"}/>
                 <ContentContainer content={privateInvestorContent} />
+                <SectionTitle title={"Mis inversiones"}/>
+                <Boxes boxContent={InvestmentstBoxesContent} />
             </div>
         )
     }
 
     getOnlineShopContent() {
-        const onlineShopContent = "Una tienda para ser diferentes (BETA): http://vorder.deibyod.co";
+        const onlineShopContent = "Mi negocio de comercio electrónico";
 
         return(
             <div className="onlineshop-content-container">
                 <SectionTitle title={"Vorder"}/>
                 <ContentContainer content={onlineShopContent} />
+                <Boxes boxContent={StoreBoxesContent} />
             </div>
         )
     }

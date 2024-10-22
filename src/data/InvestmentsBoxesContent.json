@@ -1,0 +1,26 @@
+[
+    {
+        "id": 2100,
+        "type": 1,
+        "title": "ACCIONES & ETFS",
+        "content": {
+            "text": "Hago análisis fundamental e invierto en acciones chilenas e internacionales con foco en dividendos y en el largo plazo"
+        }
+    },
+    {
+        "id": 2200,
+        "type": 2,
+        "title": "PROPIEDADES",
+        "content": {
+            "text": "He experimentado con inversiones en diversos países y bajo distintos modelos de retorno. He aprendido lecciones costosas."
+        }
+    },
+    {
+        "id": 2300,
+        "type": 3,
+        "title": "CRIPTOMONEDAS",
+        "content": {
+            "text": "Exploro con criptomonedas, con foco en el largo plazo, y aún en etapa de aprendizaje."
+        }
+    }
+]
