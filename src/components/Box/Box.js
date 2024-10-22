@@ -48,6 +48,8 @@ class Box extends Component {
                 return youtube;
             case 'video':
                 return video;
+            case 'vorder':
+                return vorder;
             default:
                 return this.props.box.image;
         }
