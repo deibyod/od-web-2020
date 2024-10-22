@@ -5,4 +5,10 @@
     color: #fff;
     padding: 1.5em;
     margin-top: 4em;
+
+    p.code-reference, p.copyright {
+        text-transform: initial;
+        font-size: 0.5em;
+        font-style: italic;
+    }
 }
