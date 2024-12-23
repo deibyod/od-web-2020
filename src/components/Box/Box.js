@@ -90,8 +90,16 @@ class Box extends Component {
         //console.log("imagesselection");
     }
 
-    toggleMaximize = () => {
-        this.setState((prevState) => ({ maximize: prevState.maximize ? '' : 'maximize' }));
+    toggleMaximize = (event) => {
+        if(this.state.maximize === "minimized") {
+            this.setState({
+                maximize: "maximized"
+            });
+        } else {
+            this.setState({
+                maximize: "minimized"
+            });
+        }
     }
 
     exitMaximize = (event) => {
@@ -136,17 +144,6 @@ class Box extends Component {
         }
      }
 
-    renderButton = (condition, onClick, text) => {
-        return condition ? <button className="flow-button" onClick={onClick}>{text}</button> : null;
-    }
-
-    renderImages = () => {
-        const images = [ig1, ig2, ig3, ig4, ig5, ig6, ig7, ig8];
-        return images.map((src, index) => (
-            <img key={index} className="images-button-img" alt="IG" src={src} />
-        ));
-    }
-
     render() {
         const { box } = this.props;
         const space = ' ';
@@ -166,12 +163,27 @@ class Box extends Component {
                         <p className="box-html-text" dangerouslySetInnerHTML={{ __html: this.state.text }}></p>
                     ) : null}
                     <div>
-                        {this.renderButton(this.state.text_route.optionone, this.oneFlowAction, this.state.buttontext ? this.state.buttontext.one : "Opción 1")}
+                        {this.state.text_route.optionone ? (
+                            <button className="flow-button" onClick={this.oneFlowAction}>
+                                {this.state.buttontext ? this.state.buttontext.one : "Opción 1"}
+                            </button>
+                        ) : null}
                         {this.state.text_route.optiontwo ? space : null}
-                        {this.renderButton(this.state.text_route.optiontwo, this.twoFlowAction, this.state.buttontext ? this.state.buttontext.two : "Opción 2")}
+                        {this.state.text_route.optiontwo ? (
+                            <button className="flow-button" onClick={this.twoFlowAction}>
+                                {this.state.buttontext.two ? this.state.buttontext.two : "Opción 2"}
+                            </button>
+                        ) : null}
                         {this.state.text_route.buttonimages ? (
                             <div className="images-button">
-                                {this.renderImages()}
+                                <img className="images-button-img" alt="IG" src={ig1} />
+                                <img className="images-button-img" alt="IG" src={ig2} />
+                                <img className="images-button-img" alt="IG" src={ig3} />
+                                <img className="images-button-img" alt="IG" src={ig4} />
+                                <img className="images-button-img" alt="IG" src={ig5} />
+                                <img className="images-button-img" alt="IG" src={ig6} />
+                                <img className="images-button-img" alt="IG" src={ig7} />
+                                <img className="images-button-img" alt="IG" src={ig8} />
                             </div>
                         ) : null}
                     </div>
