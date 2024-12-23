@@ -11,7 +11,7 @@ const root = createRoot(container); // createRoot(container!) if you use TypeScr
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
