@@ -1,6 +1,6 @@
 [
     {
-        "id": 21,
+        "id": 901,
         "type": 1,
         "title": "VIGENCIA",
         "content": {
@@ -8,7 +8,7 @@
         }
     },
     {
-        "id": 22,
+        "id": 902,
         "type": 2,
         "title": "CONSISTENCIA",
         "content": {
@@ -16,7 +16,7 @@
         }
     },
     {
-        "id": 23,
+        "id": 903,
         "type": 3,
         "title": "RESULTADOS",
         "content": {
