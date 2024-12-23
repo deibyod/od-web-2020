@@ -1,6 +1,6 @@
 [
     {
-        "id": 2100,
+        "id": 301,
         "type": 1,
         "title": "ACCIONES & ETFS",
         "content": {
@@ -8,7 +8,7 @@
         }
     },
     {
-        "id": 2200,
+        "id": 302,
         "type": 2,
         "title": "PROPIEDADES",
         "content": {
@@ -16,7 +16,7 @@
         }
     },
     {
-        "id": 2300,
+        "id": 303,
         "type": 3,
         "title": "CRIPTOMONEDAS",
         "content": {
