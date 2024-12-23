@@ -5,6 +5,7 @@
     top: 0.5em;
     right: 0.8em;
     background-size: contain;
+    cursor: pointer;
 
     &.maximize {
         background-image: url(./images/maximize.png);
