@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './referral-option.scss';
 import platzi from './images/platzi.png';
-import soyfocus from './images/soyfocus.png';
-import nuevepunto5 from './images/9punto5.png';
+import realizados from './images/realizados.png';
 
 class ReferralOption extends Component {
     state = {
@@ -14,10 +13,8 @@ class ReferralOption extends Component {
         switch (this.props.referral_option.image) {
             case 'platzi':
                 return platzi;
-            case 'soyfocus':
-                return soyfocus;
-            case 'nuevepunto5':
-                return nuevepunto5;
+            case 'realizados':
+                return realizados;
             default:
                 return this.props.referral_option.image;
         }
