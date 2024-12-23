@@ -145,34 +145,52 @@ class Box extends Component {
      }
 
     render() {
-        const {box} = this.props;
+        const { box } = this.props;
         const space = ' ';
 
-        return(
+        return (
             <div className={`box-container box-${box.type} ${this.state.maximize}`} onClick={this.exitMaximize}>
-                <div className={`box-content`}>
-                    <MaximizeIcon toggleMaximize={this.toggleMaximize}/>
-                    { box.title? <h2>{box.title}<br /><img className="separator" alt="Separator" src={separator} /></h2>  : "" }
-                    { box.content? <p className="box-html-text" dangerouslySetInnerHTML={{__html: this.state.text}}></p> : null }
+                <div className="box-content">
+                    <MaximizeIcon toggleMaximize={this.toggleMaximize} />
+                    {box.title ? (
+                        <h2>
+                            {box.title}
+                            <br />
+                            <img className="separator" alt="Separator" src={separator} />
+                        </h2>
+                    ) : null}
+                    {box.content ? (
+                        <p className="box-html-text" dangerouslySetInnerHTML={{ __html: this.state.text }}></p>
+                    ) : null}
                     <div>
-                        { this.state.text_route.optionone? <button className="flow-button" onClick={this.oneFlowAction}>{this.state.buttontext? this.state.buttontext.one : "Opción 1"}</button> : "" }
-                        { this.state.text_route.optiontwo? space : ""}
-                        { this.state.text_route.optiontwo? <button className="flow-button" onClick={this.twoFlowAction}>{this.state.buttontext.two? this.state.buttontext.two : "Opción 2"}</button>: "" }
-                        { this.state.text_route.buttonimages? <div className="images-button">
-                            <img className="images-button-img" alt="IG" src={ig1}/>
-                            <img className="images-button-img" alt="IG" src={ig2}/>
-                            <img className="images-button-img" alt="IG" src={ig3}/>
-                            <img className="images-button-img" alt="IG" src={ig4}/>
-                            <img className="images-button-img" alt="IG" src={ig5}/>
-                            <img className="images-button-img" alt="IG" src={ig6}/>
-                            <img className="images-button-img" alt="IG" src={ig7}/>
-                            <img className="images-button-img" alt="IG" src={ig8}/>
-                        </div> : "" }
+                        {this.state.text_route.optionone ? (
+                            <button className="flow-button" onClick={this.oneFlowAction}>
+                                {this.state.buttontext ? this.state.buttontext.one : "Opción 1"}
+                            </button>
+                        ) : null}
+                        {this.state.text_route.optiontwo ? space : null}
+                        {this.state.text_route.optiontwo ? (
+                            <button className="flow-button" onClick={this.twoFlowAction}>
+                                {this.state.buttontext.two ? this.state.buttontext.two : "Opción 2"}
+                            </button>
+                        ) : null}
+                        {this.state.text_route.buttonimages ? (
+                            <div className="images-button">
+                                <img className="images-button-img" alt="IG" src={ig1} />
+                                <img className="images-button-img" alt="IG" src={ig2} />
+                                <img className="images-button-img" alt="IG" src={ig3} />
+                                <img className="images-button-img" alt="IG" src={ig4} />
+                                <img className="images-button-img" alt="IG" src={ig5} />
+                                <img className="images-button-img" alt="IG" src={ig6} />
+                                <img className="images-button-img" alt="IG" src={ig7} />
+                                <img className="images-button-img" alt="IG" src={ig8} />
+                            </div>
+                        ) : null}
                     </div>
                     {this.getLink()}
                 </div>
             </div>
-        )
+        );
     }
 }
 
