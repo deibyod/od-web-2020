@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6206b34.css",
-    "main.js": "/static/js/main.b876566f.js",
+    "main.css": "/static/css/main.09bca2f8.css",
+    "main.js": "/static/js/main.bc514c80.js",
     "static/media/ig-4.png": "/static/media/ig-4.8b67a2f8de18584965d9.png",
     "static/media/world-map.png": "/static/media/world-map.61cebf93d69365efb3a1.png",
     "static/media/ig-7.png": "/static/media/ig-7.fe8c9dc47ad9b4b82940.png",
@@ -18,7 +18,6 @@
     "static/media/deibyod-5.jpg": "/static/media/deibyod-5.669c2f6861c63edd613e.jpg",
     "static/media/deibyod-2.jpg": "/static/media/deibyod-2.ee84f003f2b0374fd8ee.jpg",
     "static/media/deibyod-4.jpg": "/static/media/deibyod-4.a3299e8a50595c070f4c.jpg",
-    "static/media/vorder.jpg": "/static/media/vorder.f1e0c8d3fed378a17d49.jpg",
     "static/media/header-img-mobile.png": "/static/media/header-img-mobile.a4960f01618045734e90.png",
     "static/media/box-bg-blue.png": "/static/media/box-bg-blue.ae0664d0e2e4013cb836.png",
     "static/media/footer-img.png": "/static/media/footer-img.fc6e0efa7cf3ac88f637.png",
@@ -27,18 +26,17 @@
     "static/media/box-bg-1.png": "/static/media/box-bg-1.0b5bde3f4174294f8c0c.png",
     "static/media/box-bg-2.png": "/static/media/box-bg-2.c472817ed5254133e667.png",
     "static/media/box-bg-3.png": "/static/media/box-bg-3.15c8ad22b531b83ad89d.png",
-    "static/media/soyfocus.png": "/static/media/soyfocus.d99aeb01a14092abfa02.png",
     "static/media/platzi.png": "/static/media/platzi.0d6336eca828d938168e.png",
     "static/media/logo.svg": "/static/media/logo.4b914a9ec7137d7ed3d96e886ec2b54e.svg",
     "static/media/section-title-img.png": "/static/media/section-title-img.81b9de18465f851b2c63.png",
-    "static/media/9punto5.png": "/static/media/9punto5.57fc22a6daa4699a2dcb.png",
+    "static/media/vorder-v.png": "/static/media/vorder-v.7d83da1c0be738242fdf.png",
     "static/media/blog.png": "/static/media/blog.0115f82b051da9728143.png",
     "index.html": "/index.html",
-    "main.a6206b34.css.map": "/static/css/main.a6206b34.css.map",
-    "main.b876566f.js.map": "/static/js/main.b876566f.js.map"
+    "main.09bca2f8.css.map": "/static/css/main.09bca2f8.css.map",
+    "main.bc514c80.js.map": "/static/js/main.bc514c80.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6206b34.css",
-    "static/js/main.b876566f.js"
+    "static/css/main.09bca2f8.css",
+    "static/js/main.bc514c80.js"
   ]
 }
