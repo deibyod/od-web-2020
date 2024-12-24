@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './referral-option.scss';
-import platzi from './images/platzi.png';
-import realizados from './images/realizados.png';
+// Crear un contexto para importar todas las imágenes de una carpeta
+const images = require.context('./images', true, /\.(png|jpe?g|svg)$/);
+
 
 class ReferralOption extends Component {
     state = {
@@ -10,14 +11,8 @@ class ReferralOption extends Component {
     }
 
     getImage() {
-        switch (this.props.referral_option.image) {
-            case 'platzi':
-                return platzi;
-            case 'realizados':
-                return realizados;
-            default:
-                return this.props.referral_option.image;
-        }
+        const imageName = this.props.referral_option.image;
+        return images(`./${imageName}.png`);
     }
 
     render() {
