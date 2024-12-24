@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './referral-option.scss';
-// Crear un contexto para importar todas las imágenes de una carpeta
 const images = require.context('./images', true, /\.(png|jpe?g|svg)$/);
 
 

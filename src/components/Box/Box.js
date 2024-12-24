@@ -3,9 +3,6 @@ import MaximizeIcon from '../MaximizeIcon/MaximizeIcon';
 import './box.scss';
 import arrowButton from './images/arrow-button.png';
 import separator from '../../images/separator.png';
-import linkedin from '../../images/social/linkedin.png';
-import facebook from '../../images/social/facebook.png';
-import instagram from '../../images/social/instagram.png';
 import ig1 from "../../images/ig/ig-1.png";
 import ig2 from "../../images/ig/ig-2.png";
 import ig3 from "../../images/ig/ig-3.png";
@@ -14,11 +11,10 @@ import ig5 from "../../images/ig/ig-5.png";
 import ig6 from "../../images/ig/ig-6.png";
 import ig7 from "../../images/ig/ig-7.png";
 import ig8 from "../../images/ig/ig-8.png";
-import youtube from '../../images/social/youtube.png';
-import video from '../../images/resources/video.png';
-import twitter from '../../images/social/twitter.png';
-import blog from "../../images/blog.png";
-import vorder from "../../images/vorder-v.png";
+const imagesIg = require.context('../../images/ig', false, /\.(png|jpe?g|svg)$/);
+const imagesSocial = require.context('../../images/social', false, /\.(png|jpe?g|svg)$/);
+const imagesResources = require.context('../../images/resources', false, /\.(png|jpe?g|svg)$/);
+const imagesRoot = require.context('../../images', false, /\.(png|jpe?g|svg)$/);
 
 class Box extends Component {
     state = {
@@ -33,29 +29,25 @@ class Box extends Component {
     }
 
     getImage() {
-        switch (this.props.box.image) {
-            case 'blog':
-                return blog;
-            case 'linkedin':
-                return linkedin;
-            case 'instagram':
-                return instagram;
-            case 'twitter':
-                return twitter;
-            case 'facebook':
-                return facebook;
-            case 'youtube':
-                return youtube;
-            case 'video':
-                return video;
-            case 'vorder':
-                return vorder;
-            /*case 'github':
-                return github;
-            case 'gitlab':
-                return gitlab;*/
-            default:
-                return this.props.box.image;
+        const imageName = this.props.box.image;
+
+        try {
+            return imagesIg(`./${imageName}.png`);
+        } catch (error) {
+            try {
+                return imagesSocial(`./${imageName}.png`);
+            } catch (error) {
+                try {
+                    return imagesResources(`./${imageName}.png`);
+                } catch (error) {
+                    try {
+                        return imagesRoot(`./${imageName}.png`);
+                    } catch (error) {
+                        console.error(`Error loading image: ${imageName}.png`, error);
+                        return null;
+                    }
+                }
+            }
         }
     }
 
