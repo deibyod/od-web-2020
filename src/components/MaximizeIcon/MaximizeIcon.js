@@ -1,30 +1,24 @@
 import React, { Component }  from 'react';
 import './maximize-icon.scss';
 
-class Maximize extends Component {
+class MaximizeIcon extends Component {
     state = {
         image_state: "maximize"
     }
 
     toggleState = () => {
-        if(this.state.image_state === "maximize") {
-            this.setState({
-                image_state: "minimize"
-            })
-        } else {
-            this.setState({
-                image_state: "maximize"
-            })
-        }
+        this.setState((prevState) => ({
+            image_state: prevState.image_state === "maximize" ? "minimize" : "maximize"
+        }));
         this.props.toggleMaximize();
     }
 
     render() {
         return(
-            <div className={`maximize-container ${this.state.image_state}`} onClick={this.toggleState}>
+            <div className={`maximize-container ${this.props.maximizeState}`} onClick={this.toggleState}>
             </div>
         )
     }
 }
 
-export default Maximize;
+export default MaximizeIcon;

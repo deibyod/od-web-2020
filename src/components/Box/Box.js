@@ -83,24 +83,14 @@ class Box extends Component {
     }
 
     toggleMaximize = (event) => {
-        if(this.state.maximize === "minimized") {
-            this.setState({
-                maximize: "maximized"
-            });
-        } else {
-            this.setState({
-                maximize: "minimized"
-            });
-        }
+        this.setState((prevState) => ({
+            maximize: prevState.maximize === "minimized" ? "maximized" : "minimized"
+        }));
     }
 
     exitMaximize = (event) => {
         if (event.target.contains(document.getElementsByClassName('maximized')[0])) {
-            if(this.state.maximize === "maximized") {
-                this.setState({
-                    maximize: "minimized"
-                });
-            }
+            this.setState({ maximize: "minimized" });
         }
     }
 
@@ -143,7 +133,7 @@ class Box extends Component {
         return (
             <div className={`box-container box-${box.type} ${this.state.maximize}`} onClick={this.exitMaximize}>
                 <div className="box-content">
-                    <MaximizeIcon toggleMaximize={this.toggleMaximize} />
+                    <MaximizeIcon maximizeState ={this.state.maximize} toggleMaximize={this.toggleMaximize} />
                     {box.title ? (
                         <h2>
                             {box.title}

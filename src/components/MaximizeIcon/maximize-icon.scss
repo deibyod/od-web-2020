@@ -7,11 +7,11 @@
     background-size: contain;
     cursor: pointer;
 
-    &.maximize {
+    &.minimized {
         background-image: url(./images/maximize.png);
     }
 
-    &.minimize {
+    &.maximized {
         background-image: url(./images/minimize.png);
     }
 }
