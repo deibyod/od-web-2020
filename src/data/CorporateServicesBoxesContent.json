@@ -5,7 +5,8 @@
         "title": "Training & Mentoring",
         "content": {
             "text": "Entrenamientos y mentorías personalizadas"
-        }
+        },
+        "animatedIcon": "social-care"
     },
     {
         "id": 101,
@@ -13,7 +14,8 @@
         "title": "Transformación Organizacional",
         "content": {
             "text": "Business Agility, Transformación Digital & Product Management"
-        }
+        },
+        "animatedIcon": "rocket"
     },
     {
         "id": 102,
@@ -21,6 +23,7 @@
         "title": "Temporary Leadership",
         "content": {
             "text": "Liderazgo temporal de equipos de producto, tecnología y/o agilidad."
-        }
+        },
+        "animatedIcon": "social-media"
     }
 ]

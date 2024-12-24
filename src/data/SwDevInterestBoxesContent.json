@@ -5,7 +5,8 @@
         "title": "VIGENCIA",
         "content": {
             "text": "Quiero mantenerme actualizado, explorar nuevas tecnologías y posibilidades"
-        }
+        },
+        "animatedIcon": "hacker"
     },
     {
         "id": 902,
@@ -13,7 +14,8 @@
         "title": "CONSISTENCIA",
         "content": {
             "text": "Estoy abierto a pequeños proyectos y aportes, pero me gustaría, sobre todo, colaboraciones duraderas con baja dedicación."
-        }
+        },
+        "animatedIcon": "social-media"
     },
     {
         "id": 903,
@@ -21,6 +23,7 @@
         "title": "RESULTADOS",
         "content": {
             "text": "Me interesa generar colaboraciones que generen resultados positivos."
-        }
+        },
+        "animatedIcon": "target"
     }
 ]

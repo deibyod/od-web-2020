@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MaximizeIcon from '../MaximizeIcon/MaximizeIcon';
+import AnimatedIcon from '../AnimatedIcon/AnimatedIcon';
 import './box.scss';
 import arrowButton from './images/arrow-button.png';
 import separator from '../../images/separator.png';
@@ -11,6 +12,7 @@ import ig5 from "../../images/ig/ig-5.png";
 import ig6 from "../../images/ig/ig-6.png";
 import ig7 from "../../images/ig/ig-7.png";
 import ig8 from "../../images/ig/ig-8.png";
+
 const imagesIg = require.context('../../images/ig', false, /\.(png|jpe?g|svg)$/);
 const imagesSocial = require.context('../../images/social', false, /\.(png|jpe?g|svg)$/);
 const imagesResources = require.context('../../images/resources', false, /\.(png|jpe?g|svg)$/);
@@ -94,10 +96,16 @@ class Box extends Component {
         }
     }
 
+    handleMouseEnter = () => {
+        this.setState({ isHovered: true });
+    }
+
+    handleMouseLeave = () => {
+        this.setState({ isHovered: false });
+    }
+
     getLink() {
         let links = this.state.box.url;
-
-        //console.log(this.state.box.url);
 
         if(typeof this.state.box.url === 'object') {
             return(
@@ -113,7 +121,7 @@ class Box extends Component {
                 })}
                 </>
             )
-        } else if (this.state.box.url !== undefined) {
+        } else if (typeof this.state.box.url === 'string' || this.state.box.url instanceof String) {
             return (
                 <a href={this.state.box.url} target="_blank" rel="noopener noreferrer">
                     <div className="graphic-button">
@@ -124,14 +132,20 @@ class Box extends Component {
         } else {
             return ("")
         }
-     }
+    }
 
     render() {
         const { box } = this.props;
+        const { isHovered } = this.state;
         const space = ' ';
 
         return (
-            <div className={`box-container box-${box.type} ${this.state.maximize}`} onClick={this.exitMaximize}>
+            <div
+                className={`box-container box-${box.type} ${this.state.maximize}`}
+                onMouseEnter={this.handleMouseEnter} 
+                onMouseLeave={this.handleMouseLeave}
+                onClick={this.exitMaximize}
+            >
                 <div className="box-content">
                     <MaximizeIcon maximizeState ={this.state.maximize} toggleMaximize={this.toggleMaximize} />
                     {box.title ? (
@@ -140,6 +154,9 @@ class Box extends Component {
                             <br />
                             <img className="separator" alt="Separator" src={separator} />
                         </h2>
+                    ) : null}
+                    {box.animatedIcon ? (
+                        <AnimatedIcon iconName={box.animatedIcon} isHovered={isHovered} />
                     ) : null}
                     {box.content ? (
                         <p className="box-html-text" dangerouslySetInnerHTML={{ __html: this.state.text }}></p>
