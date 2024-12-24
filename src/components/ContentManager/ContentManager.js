@@ -44,13 +44,13 @@ class ContentManager extends Component {
     getEACContent() {
         return(
             <div className="eac-content-container">
-                <SectionTitle title={"¿Qué Servicios Corporativos ofrezco?"}/>
+                <SectionTitle title={"Servicios Corporativos"}/>
                 <Boxes boxContent={CorporateServicesContent} />
-                <SectionTitle title={"¿Qué Servicios Individuales ofrezco?"}/>
+                <SectionTitle title={"Servicios Individuales"}/>
                 <Boxes boxContent={IndividualServicesContent} />
-                <SectionTitle title={"¿Que contenidos tengo para compartir?"}/>
+                <SectionTitle title={"Contenidos"}/>
                 <Boxes boxContent={ResourcesSpacesContent} />
-                <SectionTitle title={"¿Cuales son mis redes profesionales?"}/>
+                <SectionTitle title={"Redes profesionales"}/>
                 <Boxes boxContent={ProfessionalSpacesContent} />
             </div>
         )
