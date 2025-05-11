@@ -18,6 +18,7 @@ import PersonalSpacesContent from '../../data/PersonalBoxesContent.json';
 import ProfessionalSpacesContent from '../../data/ProfessionalBoxesContent.json';
 import ReferralsContent from '../../data/ReferralsContent.json';
 import SwDevInterestBoxesContent from '../../data/SwDevInterestBoxesContent.json';
+import SwResourcesBoxesContent from '../../data/SwResourcesBoxesContent.json';
 import InvestmentstBoxesContent from '../../data/InvestmentsBoxesContent.json';
 import StoreBoxesContent from '../../data/StoreBoxesContent.json';
 
@@ -57,12 +58,14 @@ class ContentManager extends Component {
     }
 
     getSoftwareDevContent() {
-        const softwareDevContent = "Desarrollo software, en su mayoría como voluntario o comunitario, desde hace más de 12 años."; 
+        const softwareDevContent = "Desarrollo software desde hace más de 15 años."; 
 
         return(
             <div className="softwaredev-content-container">
                 <SectionTitle title={"¿Qué he hecho?"}/>
                 <ContentContainer content={softwareDevContent} />
+                <SectionTitle title={"Recursos Gratuitos"}/>
+                <Boxes boxContent={SwResourcesBoxesContent} />
                 <SectionTitle title={"Mis intereses"}/>
                 <Boxes boxContent={SwDevInterestBoxesContent} />
             </div>

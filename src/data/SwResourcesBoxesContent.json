@@ -1,0 +1,22 @@
+[
+    {
+        "id": 12301,
+        "type": 1,
+        "title": "REUNIONTIME",
+        "content": {
+            "text": "Webapp customizable para regular el tiempo de las reuniones, evitando que se extiendan más allá de lo necesario. Permite a los participantes ver el tiempo restante y recibir señales visuales y sonoras cuando el tiempo se está excediendo."
+        },
+        "image": "target",
+        "url": "https://reuniontime.deibyod.co/"
+    },
+    {
+        "id": 12302,
+        "type": 2,
+        "title": "COFFEE PASSPORT",
+        "content": {
+            "text": "¿Te gustaría explorar y valorar socialmente los mejores cafés de tu zona? Esperalo próximamente."
+        },
+        "image": "coffee-cup",
+        "url": "#"
+    }
+]
