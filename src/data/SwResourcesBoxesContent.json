@@ -11,6 +11,16 @@
     },
     {
         "id": 12302,
+        "type": 1,
+        "title": "AJEDREZ",
+        "content": {
+            "text": "Webapp del clásico juego de Ajedrez. Permite jugar contra la máquina o contra otro jugadores en local."
+        },
+        "image": "award",
+        "url": "https://ajedrez.deibyod.co/"
+    },
+    {
+        "id": 12303,
         "type": 2,
         "title": "COFFEE PASSPORT",
         "content": {
